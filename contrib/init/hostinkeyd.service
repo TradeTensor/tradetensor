@@ -1,0 +1,26 @@
+[Unit]
+Description=Tradetensor's distributed currency daemon
+After=network.target
+
+[Service]
+User=tradetensor
+Group=tradetensor
+
+Type=forking
+PIDFile=/var/lib/tradetensord/tradetensord.pid
+
+ExecStart=/usr/bin/tradetensord -daemon -pid=/var/lib/tradetensord/tradetensord.pid \
+          -conf=/etc/tradetensor/tradetensor.conf -datadir=/var/lib/tradetensord
+
+ExecStop=-/usr/bin/tradetensor-cli -conf=/etc/tradetensor/tradetensor.conf \
+         -datadir=/var/lib/tradetensord stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Tradetensor
+Comment=Tradetensor P2P Cryptocurrency
+Comment[fr]=Tradetensor, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Tradetensor, eşten eşe kriptografik sanal para birimi
+Exec=tradetensor-qt %u
+Terminal=false
+Type=Application
+Icon=tradetensor128
+MimeType=x-scheme-handler/tradetensor;
+Categories=Office;Finance;

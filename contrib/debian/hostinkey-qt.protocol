@@ -1,0 +1,11 @@
+[Protocol]
+exec=tradetensor-qt '%u'
+protocol=tradetensor
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
