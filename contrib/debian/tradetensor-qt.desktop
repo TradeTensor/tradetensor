@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=TradeTensor Core
+Comment=TradeTensor P2P Cryptocurrency
+Exec=tradetensor-qt %u
+Terminal=false
+Type=Application
+Icon=tradetensor128
+MimeType=x-scheme-handler/tradetensor;
+Categories=Office;Finance;
+StartupWMClass=TradeTensor-qt
+Name[en_US]=tradetensor-qt.desktop

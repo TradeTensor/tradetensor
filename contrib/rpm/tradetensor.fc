@@ -1,0 +1,8 @@
+/usr/bin/tradetensor-cli		--	gen_context(system_u:object_r:tradetensor_exec_t,s0)
+/usr/sbin/tradetensord		--	gen_context(system_u:object_r:tradetensor_exec_t,s0)
+/usr/lib(64)?/tradetensor/tradetensord		--	gen_context(system_u:object_r:tradetensor_exec_t,s0)
+
+/etc/tradetensor(/.*)?		gen_context(system_u:object_r:tradetensor_conf_t,s0)
+/var/lib/tradetensor(/.*)?		gen_context(system_u:object_r:tradetensor_var_lib_t,s0)
+
+(/var)?/run/tradetensord(/.*)?   gen_context(system_u:object_r:tradetensor_var_run_t,s0)

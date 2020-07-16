@@ -1,34 +1,33 @@
-Name "Tradetensor Core (64-bit)"
+Name "TradeTensor Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 3.0.0
-!define COMPANY "Tradetensor Core project"
+!define COMPANY "TradeTensor Core project"
 !define URL https://www.tradetensor.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/mnt/d/hcb/cds/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/mnt/d/hcb/cds/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/server16/tnsr-w/share/pixmaps/tradetensor.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/server16/tnsr-w/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/mnt/d/hcb/cds/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/server16/tnsr-w/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Tradetensor Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\tradetensor-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "TradeTensor Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\tradetensor-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/mnt/d/hcb/cds/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/server16/tnsr-w/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "64" == "64"
+!if "" == "64"
 !include x64.nsh
 !endif
 
@@ -48,22 +47,22 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /mnt/d/hcb/cds/tradetensor-${VERSION}-win64-setup.exe
-!if "64" == "64"
-InstallDir $PROGRAMFILES64\Tradetensor
+OutFile /home/server16/tnsr-w/tradetensor-1.0.1-win-setup.exe
+!if "" == "64"
+InstallDir $PROGRAMFILES64\TradeTensor
 !else
-InstallDir $PROGRAMFILES\Tradetensor
+InstallDir $PROGRAMFILES\TradeTensor
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.1
-VIAddVersionKey ProductName "Tradetensor Core"
-VIAddVersionKey ProductVersion "${VERSION}"
+VIProductVersion 1.0.1.0
+VIAddVersionKey ProductName "TradeTensor Core"
+VIAddVersionKey ProductVersion "1.0.1"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
-VIAddVersionKey FileVersion "${VERSION}"
+VIAddVersionKey FileVersion "1.0.1"
 VIAddVersionKey FileDescription ""
 VIAddVersionKey LegalCopyright ""
 InstallDirRegKey HKCU "${REGKEY}" Path
@@ -73,14 +72,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /mnt/d/hcb/cds/release/tradetensor-qt.exe
-    File /oname=COPYING.txt /mnt/d/hcb/cds/COPYING
-    File /oname=readme.txt /mnt/d/hcb/cds/doc/README_windows.txt
+    File /home/server16/tnsr-w/release/tradetensor-qt
+    File /oname=COPYING.txt /home/server16/tnsr-w/COPYING
+    File /oname=readme.txt /home/server16/tnsr-w/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /mnt/d/hcb/cds/release/tradetensord.exe
-    File /mnt/d/hcb/cds/release/tradetensor-cli.exe
+    File /home/server16/tnsr-w/release/tradetensord
+    File /home/server16/tnsr-w/release/tradetensor-cli
     SetOutPath $INSTDIR\doc
-    File /r /mnt/d/hcb/cds/doc\*.*
+    File /r /home/server16/tnsr-w/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -91,12 +90,12 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\tradetensor-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Tradetensor Core (testnet, 64-bit).lnk" "$INSTDIR\tradetensor-qt.exe" "-testnet" "$INSTDIR\tradetensor-qt.exe" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\tradetensor-qt
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\TradeTensor Core (testnet, -bit).lnk" "$INSTDIR\tradetensor-qt" "-testnet" "$INSTDIR\tradetensor-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
-    WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
+    WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "1.0.1"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" Publisher "${COMPANY}"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" URLInfoAbout "${URL}"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayIcon $INSTDIR\uninstall.exe
@@ -104,9 +103,9 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "tradetensor" "URL Protocol" ""
-    WriteRegStr HKCR "tradetensor" "" "URL:Tradetensor"
-    WriteRegStr HKCR "tradetensor\DefaultIcon" "" $INSTDIR\tradetensor-qt.exe
-    WriteRegStr HKCR "tradetensor\shell\open\command" "" '"$INSTDIR\tradetensor-qt.exe" "%1"'
+    WriteRegStr HKCR "tradetensor" "" "URL:TradeTensor"
+    WriteRegStr HKCR "tradetensor\DefaultIcon" "" $INSTDIR\tradetensor-qt
+    WriteRegStr HKCR "tradetensor\shell\open\command" "" '"$INSTDIR\tradetensor-qt" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -124,7 +123,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\tradetensor-qt.exe
+    Delete /REBOOTOK $INSTDIR\tradetensor-qt
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -136,8 +135,8 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Tradetensor Core (testnet, 64-bit).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Tradetensor.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\TradeTensor Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMSTARTUP\TradeTensor.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -158,7 +157,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "64" == "64"
+!if "" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64

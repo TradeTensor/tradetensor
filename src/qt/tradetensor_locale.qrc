@@ -6,14 +6,20 @@
         <file alias="da">locale/tradetensor_da.qm</file>
         <file alias="de">locale/tradetensor_de.qm</file>
         <file alias="en">locale/tradetensor_en.qm</file>
+        <file alias="en_GB">locale/tradetensor_en_GB.qm</file>
         <file alias="en_US">locale/tradetensor_en_US.qm</file>
+        <file alias="eo">locale/tradetensor_eo.qm</file>
         <file alias="es">locale/tradetensor_es.qm</file>
+        <file alias="es_ES">locale/tradetensor_es_ES.qm</file>
         <file alias="fi">locale/tradetensor_fi.qm</file>
         <file alias="fr_FR">locale/tradetensor_fr_FR.qm</file>
+        <file alias="hi_IN">locale/tradetensor_hi_IN.qm</file>
         <file alias="hr">locale/tradetensor_hr.qm</file>
+        <file alias="hr_HR">locale/tradetensor_hr_HR.qm</file>
         <file alias="it">locale/tradetensor_it.qm</file>
         <file alias="ja">locale/tradetensor_ja.qm</file>
         <file alias="ko_KR">locale/tradetensor_ko_KR.qm</file>
+        <file alias="lt_LT">locale/tradetensor_lt_LT.qm</file>
         <file alias="nl">locale/tradetensor_nl.qm</file>
         <file alias="pl">locale/tradetensor_pl.qm</file>
         <file alias="pt">locale/tradetensor_pt.qm</file>
@@ -24,6 +30,7 @@
         <file alias="sv">locale/tradetensor_sv.qm</file>
         <file alias="tr">locale/tradetensor_tr.qm</file>
         <file alias="uk">locale/tradetensor_uk.qm</file>
+        <file alias="vi">locale/tradetensor_vi.qm</file>
         <file alias="zh_CN">locale/tradetensor_zh_CN.qm</file>
         <file alias="zh_TW">locale/tradetensor_zh_TW.qm</file>
     </qresource>
