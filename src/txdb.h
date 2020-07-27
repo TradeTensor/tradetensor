@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2016-2018 The TradeTensor developers
+// Copyright (c) 2016-2017 The PIVX developers
+// Copyright (c) 2017 The Tradetensor developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +10,7 @@
 
 #include "leveldbwrapper.h"
 #include "main.h"
-#include "zpiv/zerocoin.h"
+#include "primitives/zerocoin.h"
 
 #include <map>
 #include <string>
@@ -54,9 +55,10 @@ private:
 
 public:
     bool WriteBlockIndex(const CDiskBlockIndex& blockindex);
-    bool WriteBatchSync(const std::vector<std::pair<int, const CBlockFileInfo*> >& fileInfo, int nLastFile, const std::vector<const CBlockIndex*>& blockinfo);
     bool ReadBlockFileInfo(int nFile, CBlockFileInfo& fileinfo);
+    bool WriteBlockFileInfo(int nFile, const CBlockFileInfo& fileinfo);
     bool ReadLastBlockFile(int& nFile);
+    bool WriteLastBlockFile(int nFile);
     bool WriteReindexing(bool fReindex);
     bool ReadReindexing(bool& fReindex);
     bool ReadTxIndex(const uint256& txid, CDiskTxPos& pos);
@@ -68,7 +70,6 @@ public:
     bool LoadBlockIndexGuts();
 };
 
-/** Zerocoin database (zerocoin/) */
 class CZerocoinDB : public CLevelDBWrapper
 {
 public:
@@ -79,17 +80,12 @@ private:
     void operator=(const CZerocoinDB&);
 
 public:
-    /** Write zTNSR mints to the zerocoinDB in a batch */
-    bool WriteCoinMintBatch(const std::vector<std::pair<libzerocoin::PublicCoin, uint256> >& mintInfo);
+    bool WriteCoinMint(const libzerocoin::PublicCoin& pubCoin, const uint256& txHash);
     bool ReadCoinMint(const CBigNum& bnPubcoin, uint256& txHash);
-    bool ReadCoinMint(const uint256& hashPubcoin, uint256& hashTx);
-    /** Write zTNSR spends to the zerocoinDB in a batch */
-    bool WriteCoinSpendBatch(const std::vector<std::pair<libzerocoin::CoinSpend, uint256> >& spendInfo);
+    bool WriteCoinSpend(const CBigNum& bnSerial, const uint256& txHash);
     bool ReadCoinSpend(const CBigNum& bnSerial, uint256& txHash);
-    bool ReadCoinSpend(const uint256& hashSerial, uint256 &txHash);
     bool EraseCoinMint(const CBigNum& bnPubcoin);
     bool EraseCoinSpend(const CBigNum& bnSerial);
-    bool WipeCoins(std::string strType);
     bool WriteAccumulatorValue(const uint32_t& nChecksum, const CBigNum& bnValue);
     bool ReadAccumulatorValue(const uint32_t& nChecksum, CBigNum& bnValue);
     bool EraseAccumulatorValue(const uint32_t& nChecksum);

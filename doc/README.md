@@ -1,63 +1,62 @@
-TradeTensor Core
-=============
+Tradetensor Core
+=====================
 
 Setup
 ---------------------
-[TradeTensor Core](http://tradetensor.org/wallet) is the original TradeTensor client and it builds the backbone of the network. However, it downloads and stores the entire history of TradeTensor transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Tradetensor Core](https://github.com/tradetensor-project/tradetensor) is the original Tradetensor client and it builds the backbone of the network. However, it downloads and stores the entire history of Tradetensor transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run TradeTensor Core on your native platform.
+The following are some helpful notes on how to run Tradetensor on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/tradetensor-qt` (GUI) or
-- `bin/tradetensord` (headless)
+- bin/32/tradetensor-qt (GUI, 32-bit) or bin/32/tradetensord (headless, 32-bit)
+- bin/64/tradetensor-qt (GUI, 64-bit) or bin/64/tradetensord (headless, 64-bit)
 
 ### Windows
 
 Unpack the files into a directory, and then run tradetensor-qt.exe.
 
-### macOS
+### OSX
 
-Drag TradeTensor-Qt to your applications folder, and then run TradeTensor-Qt.
+Drag Tradetensor-Qt to your applications folder, and then run Tradetensor-Qt.
 
 ### Need Help?
 
-* See the documentation at the [TradeTensor Wiki](https://github.com/TradeTensor-Project/TradeTensor/wiki)
+* See the documentation at the [Tradetensor Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [TradeTensor Forum](http://forum.tradetensor.org/).
-* Join our Discord server [Discord Server](https://discord.tradetensor.org)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0).
+* Join one of our Discord groups [Tradetensor Discord Groups](https://discord.gg/8tbvMQM).
 
 Building
 ---------------------
-The following are developer notes on how to build TradeTensor Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Tradetensor on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
-- [Dependencies](dependencies.md)
-- [macOS Build Notes](build-osx.md)
+- [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
-- [Windows Build Notes](build-windows.md)
 - [Gitian Building Guide](gitian-building.md)
 
 Development
 ---------------------
-The TradeTensor repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Tradetensor repo's [root README](https://github.com/tradetensor-project/tradetensor/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://www.fuzzbawls.pw/tradetensor/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/) ***TODO***
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [TradeTensor](http://forum.tradetensor.org/) forum.
-* Join the [TradeTensor Discord](https://discord.tradetensor.org).
+
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=2956408.0) .
+* Join the [Tradetensor Discord Group](https://discord.gg/8tbvMQM).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
@@ -67,6 +66,6 @@ The TradeTensor repo's [root README](/README.md) contains relevant information o
 
 License
 ---------------------
-Distributed under the [MIT software license](/COPYING).
+Distributed under the [MIT/X11 software license](http://www.opensource.org/licenses/mit-license.php).
 This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](https://www.openssl.org/). This product includes
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.

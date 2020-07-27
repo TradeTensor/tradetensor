@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
   <key>LSMinimumSystemVersion</key>
-  <string>10.10.0</string>
+  <string>10.8.0</string>
 
   <key>LSArchitecturePriority</key>
   <array>
@@ -17,28 +17,22 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>1.0.1.0, Copyright © 2009-2020 The Bitcoin Core developers, 2014-2020 The Dash Core developers, 2015-2020 The TradeTensor Core developers</string>
+  <string>3.0.0, Copyright © 2009-2019 The Bitcoin Core developers, 2014-2019 The Dash Core developers, 2015-2019 The Tradetensor Core developers</string>
 
   <key>CFBundleShortVersionString</key>
-  <string>1.0.1</string>
+  <string>3.0.0</string>
 
   <key>CFBundleVersion</key>
-  <string>1.0.1</string>
+  <string>3.0.0</string>
 
   <key>CFBundleSignature</key>
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>TradeTensor-Qt</string>
-
-  <key>CFBundleName</key>
-  <string>TradeTensor-Qt</string>
-
-  <key>LSHasLocalizedDisplayName</key>
-  <true/>
+  <string>Tradetensor-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.tradetensor.TradeTensor-Qt</string>
+  <string>io.tradetensor.Tradetensor-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.tradetensor.TradeTensorPayment</string>
+      <string>io.tradetensor.TradetensorPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>tradetensor</string>
@@ -60,7 +54,7 @@
       <key>UTTypeIdentifier</key>
       <string>io.tradetensor.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>TradeTensor payment request</string>
+      <string>Tradetensor payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -98,9 +92,6 @@
     <string>True</string>
 
   <key>LSAppNapIsDisabled</key>
-    <string>True</string>
-
-  <key>NSRequiresAquaSystemAppearance</key>
     <string>True</string>
 
   <key>LSApplicationCategoryType</key>

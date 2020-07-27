@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The TradeTensor developers
+// Copyright (c) 2017 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TradeTensor_CSPORKDB_H
-#define TradeTensor_CSPORKDB_H
+#ifndef TRADETENSOR_CSPORKDB_H
+#define TRADETENSOR_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -19,10 +19,10 @@ private:
     void operator=(const CSporkDB&);
 
 public:
-    bool WriteSpork(const SporkId nSporkId, const CSporkMessage& spork);
-    bool ReadSpork(const SporkId nSporkId, CSporkMessage& spork);
-    bool SporkExists(const SporkId nSporkId);
+    bool WriteSpork(const int nSporkId, const CSporkMessage& spork);
+    bool ReadSpork(const int nSporkId, CSporkMessage& spork);
+    bool SporkExists(const int nSporkId);
 };
 
 
-#endif //TradeTensor_CSPORKDB_H
+#endif //TRADETENSOR_CSPORKDB_H

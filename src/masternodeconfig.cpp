@@ -1,33 +1,22 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The TradeTensor developers
+// Copyright (c) 2015-2017 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "netbase.h"
+// clang-format off
+#include "net.h"
 #include "masternodeconfig.h"
 #include "util.h"
-#include "guiinterface.h"
+#include "ui_interface.h"
 #include <base58.h>
+// clang-format on
 
 CMasternodeConfig masternodeConfig;
 
-CMasternodeConfig::CMasternodeEntry* CMasternodeConfig::add(std::string alias, std::string ip, std::string privKey, std::string txHash, std::string outputIndex)
+void CMasternodeConfig::add(std::string alias, std::string ip, std::string privKey, std::string txHash, std::string outputIndex)
 {
     CMasternodeEntry cme(alias, ip, privKey, txHash, outputIndex);
     entries.push_back(cme);
-    return &(entries[entries.size()-1]);
-}
-
-void CMasternodeConfig::remove(std::string alias) {
-    int pos = -1;
-    for (int i = 0; i < ((int) entries.size()); ++i) {
-        CMasternodeEntry e = entries[i];
-        if (e.getAlias() == alias) {
-            pos = i;
-            break;
-        }
-    }
-    entries.erase(entries.begin() + pos);
 }
 
 bool CMasternodeConfig::read(std::string& strErr)
@@ -41,8 +30,7 @@ bool CMasternodeConfig::read(std::string& strErr)
         if (configFile != NULL) {
             std::string strHeader = "# Masternode config file\n"
                                     "# Format: alias IP:port masternodeprivkey collateral_output_txid collateral_output_index\n"
-                                    "# Example: mn1 127.0.0.2:30145 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0"
-                                    "#\n";
+                                    "# Example: mn1 127.0.0.2:27413 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
         }
@@ -72,28 +60,18 @@ bool CMasternodeConfig::read(std::string& strErr)
             }
         }
 
-        int port = 0;
-        std::string hostname = "";
-        SplitHostPort(ip, port, hostname);
-        if(port == 0 || hostname == "") {
-            strErr = _("Failed to parse host:port string") + "\n"+
-                     strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"";
-            streamConfig.close();
-            return false;
-        }
-
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (port != 30145) {
+            if (CService(ip).GetPort() != 27413) {
                 strErr = _("Invalid port detected in masternode.conf") + "\n" +
                          strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-                         _("(must be 30145 for mainnet)");
+                         _("(must be 27413 for mainnet)");
                 streamConfig.close();
                 return false;
             }
-        } else if (port == 30145) {
+        } else if (CService(ip).GetPort() == 27413) {
             strErr = _("Invalid port detected in masternode.conf") + "\n" +
                      strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-                     _("(30145 could be used only on mainnet)");
+                     _("(27413 could be used only on mainnet)");
             streamConfig.close();
             return false;
         }
@@ -106,11 +84,11 @@ bool CMasternodeConfig::read(std::string& strErr)
     return true;
 }
 
-bool CMasternodeConfig::CMasternodeEntry::castOutputIndex(int &n) const
+bool CMasternodeConfig::CMasternodeEntry::castOutputIndex(int &n)
 {
     try {
         n = std::stoi(outputIndex);
-    } catch (const std::exception& e) {
+    } catch (const std::exception e) {
         LogPrintf("%s: %s on getOutputIndex\n", __func__, e.what());
         return false;
     }

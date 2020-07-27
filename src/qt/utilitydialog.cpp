@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The TradeTensor developers
+// Copyright (c) 2015-2017 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,12 +8,11 @@
 
 #include "ui_helpmessagedialog.h"
 
+#include "bitcoingui.h"
 #include "clientmodel.h"
 #include "guiconstants.h"
 #include "intro.h"
 #include "guiutil.h"
-
-#include "qt/tradetensor/qtutils.cpp"
 
 #include "clientversion.h"
 #include "init.h"
@@ -29,14 +28,13 @@
 #include <QVBoxLayout>
 
 /** "Help message" or "About" dialog box */
-HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
+HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(parent),
                                                                     ui(new Ui::HelpMessageDialog)
 {
     ui->setupUi(this);
-    if (parent) this->setStyleSheet(parent->styleSheet());
     GUIUtil::restoreWindowGeometry("nHelpMessageDialogWindow", this->size(), this);
 
-    QString version = tr("TradeTensor Core") + " " + tr("version") + " " + QString::fromStdString(FormatFullVersion());
+    QString version = tr("Tradetensor [TNSR] v2") + " " + tr("version") + " " + QString::fromStdString(FormatFullVersion());
 /* On x86 add a bit specifier to the version so that users can distinguish between
      * 32 and 64 bit builds. On other architectures, 32/64 bit may be more ambigious.
      */
@@ -46,10 +44,8 @@ HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(pare
     version += " " + tr("(%1-bit)").arg(32);
 #endif
 
-    setCssBtnPrimary(ui->pushButtonOk);
-    connect(ui->pushButtonOk, &QPushButton::clicked, this, &HelpMessageDialog::close);
     if (about) {
-        setWindowTitle(tr("About TradeTensor Core"));
+        setWindowTitle(tr("About Tradetensor Core"));
 
         /// HTML-format the license message from the core
         QString licenseInfo = QString::fromStdString(LicenseInfo());
@@ -58,7 +54,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(pare
         // Make URLs clickable
         QRegExp uri("<(.*)>", Qt::CaseSensitive, QRegExp::RegExp2);
         uri.setMinimal(true); // use non-greedy matching
-        licenseInfoHTML.replace(uri, "<a style='color: #b088ff;text-decoration:none'  href=\"\\1\">\\1</a>");
+        licenseInfoHTML.replace(uri, "<a href=\"\\1\">\\1</a>");
         // Replace newlines with HTML breaks
         licenseInfoHTML.replace("\n\n", "<br><br>");
 
@@ -147,18 +143,23 @@ void HelpMessageDialog::showOrPrint()
 #endif
 }
 
+void HelpMessageDialog::on_okButton_accepted()
+{
+    close();
+}
+
 
 /** "Shutdown" window */
 ShutdownWindow::ShutdownWindow(QWidget* parent, Qt::WindowFlags f) : QWidget(parent, f)
 {
     QVBoxLayout* layout = new QVBoxLayout();
     layout->addWidget(new QLabel(
-        tr("TradeTensor Core is shutting down...") + "<br /><br />" +
+        tr("Tradetensor Core is shutting down...") + "<br /><br />" +
         tr("Do not shut down the computer until this window disappears.")));
     setLayout(layout);
 }
 
-void ShutdownWindow::showShutdownWindow(QMainWindow* window)
+void ShutdownWindow::showShutdownWindow(BitcoinGUI* window)
 {
     if (!window)
         return;

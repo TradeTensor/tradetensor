@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2012 The Dash developers
-// Copyright (c) 2015-2019 The TradeTensor developers
+// Copyright (c) 2015-2017 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,6 +26,8 @@
 #define SWIFTTX_SIGNATURES_REQUIRED 6
 #define SWIFTTX_SIGNATURES_TOTAL 10
 
+using namespace std;
+using namespace boost;
 
 class CConsensusVote;
 class CTransaction;
@@ -33,10 +35,10 @@ class CTransactionLock;
 
 static const int MIN_SWIFTTX_PROTO_VERSION = 70103;
 
-extern std::map<uint256, CTransaction> mapTxLockReq;
-extern std::map<uint256, CTransaction> mapTxLockReqRejected;
-extern std::map<uint256, CConsensusVote> mapTxLockVote;
-extern std::map<uint256, CTransactionLock> mapTxLocks;
+extern map<uint256, CTransaction> mapTxLockReq;
+extern map<uint256, CTransaction> mapTxLockReqRejected;
+extern map<uint256, CConsensusVote> mapTxLockVote;
+extern map<uint256, CTransactionLock> mapTxLocks;
 extern std::map<COutPoint, uint256> mapLockedInputs;
 extern int nCompleteTXLocks;
 
@@ -59,31 +61,20 @@ bool ProcessConsensusVote(CNode* pnode, CConsensusVote& ctx);
 // keep transaction locks in memory for an hour
 void CleanTransactionLocksList();
 
-// get the accepted transaction lock signatures
-int GetTransactionLockSignatures(uint256 txHash);
-
 int64_t GetAverageVoteTime();
 
-class CConsensusVote : public CSignedMessage
+class CConsensusVote
 {
 public:
     CTxIn vinMasternode;
     uint256 txHash;
     int nBlockHeight;
-
-    CConsensusVote() :
-        CSignedMessage(),
-        vinMasternode(),
-        txHash(),
-        nBlockHeight(0)
-    {}
+    std::vector<unsigned char> vchMasterNodeSignature;
 
     uint256 GetHash() const;
 
-    // override CSignedMessage functions
-    uint256 GetSignatureHash() const override;
-    std::string GetStrMessage() const override;
-    const CTxIn GetVin() const override { return vinMasternode; };
+    bool SignatureValid();
+    bool Sign();
 
     ADD_SERIALIZE_METHODS;
 
@@ -92,14 +83,8 @@ public:
     {
         READWRITE(txHash);
         READWRITE(vinMasternode);
-        READWRITE(vchSig);
+        READWRITE(vchMasterNodeSignature);
         READWRITE(nBlockHeight);
-        try
-        {
-            READWRITE(nMessVersion);
-        } catch (...) {
-            nMessVersion = MessageVersion::MESS_VER_STRMESS;
-        }
     }
 };
 

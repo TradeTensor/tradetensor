@@ -1,5 +1,4 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017-2019 The TradeTensor developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -73,7 +72,6 @@ private:
     void startThread();
     void checkPath(const QString& dataDir);
     QString getPathToCheck();
-    void updateDataDirStatus(bool enabled);
 
     friend class FreespaceChecker;
 };

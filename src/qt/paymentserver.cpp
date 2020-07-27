@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The TradeTensor developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017 The Tradetensor developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,11 +13,14 @@
 
 #include "base58.h"
 #include "chainparams.h"
-#include "guiinterface.h"
+#include "ui_interface.h"
 #include "util.h"
-#include "wallet/wallet.h"
+#include "wallet.h"
 
 #include <cstdlib>
+
+#include <openssl/x509.h>
+#include <openssl/x509_vfy.h>
 
 #include <QApplication>
 #include <QByteArray>
@@ -38,8 +42,15 @@
 #include <QSslSocket>
 #include <QStringList>
 #include <QTextDocument>
-#include <QUrlQuery>
 
+#if QT_VERSION < 0x050000
+#include <QUrl>
+#else
+#include <QUrlQuery>
+#endif
+
+using namespace boost;
+using namespace std;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
 const QString BITCOIN_IPC_PREFIX("tradetensor:");
@@ -76,7 +87,7 @@ namespace // Anon namespace
 //
 static QString ipcServerName()
 {
-    QString name("TradeTensorQt");
+    QString name("TradetensorQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
@@ -96,7 +107,7 @@ static QList<QString> savedPaymentRequests;
 
 static void ReportInvalidCertificate(const QSslCertificate& cert)
 {
-    qDebug() << QString("%1: Payment server found an invalid certificate: ").arg(__func__) << cert.serialNumber() << cert.subjectInfo(QSslCertificate::CommonName) << cert.subjectInfo(QSslCertificate::DistinguishedNameQualifier) << cert.subjectInfo(QSslCertificate::OrganizationalUnitName);
+    qDebug() << "ReportInvalidCertificate : Payment server found an invalid certificate: " << cert.subjectInfo(QSslCertificate::CommonName);
 }
 
 //
@@ -136,12 +147,12 @@ void PaymentServer::LoadRootCAs(X509_STORE* _store)
             ReportInvalidCertificate(cert);
             continue;
         }
-
-        // Blacklisted certificate
+#if QT_VERSION >= 0x050000
         if (cert.isBlacklisted()) {
             ReportInvalidCertificate(cert);
             continue;
         }
+#endif
         QByteArray certData = cert.toDer();
         const unsigned char* data = (const unsigned char*)certData.data();
 
@@ -364,7 +375,11 @@ void PaymentServer::handleURIOrFile(const QString& s)
 
     if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // tradetensor: URI
     {
+#if QT_VERSION < 0x050000
+        QUrl uri(s);
+#else
         QUrlQuery uri((QUrl(s)));
+#endif
         if (uri.hasQueryItem("r")) // payment request URI
         {
             QByteArray temp;
@@ -395,7 +410,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
                     emit receivedPaymentRequest(recipient);
             } else
                 emit message(tr("URI handling"),
-                    tr("URI cannot be parsed! This can be caused by an invalid TradeTensor address or malformed URI parameters."),
+                    tr("URI cannot be parsed! This can be caused by an invalid Tradetensor address or malformed URI parameters."),
                     CClientUIInterface::ICON_WARNING);
 
             return;
@@ -572,7 +587,7 @@ void PaymentServer::fetchPaymentACK(CWallet* wallet, SendCoinsRecipient recipien
     // Create a new refund address, or re-use:
     QString account = tr("Refund from %1").arg(recipient.authenticatedMerchant);
     std::string strAccount = account.toStdString();
-    std::set<CTxDestination> refundAddresses = wallet->GetAccountAddresses(strAccount);
+    set<CTxDestination> refundAddresses = wallet->GetAccountAddresses(strAccount);
     if (!refundAddresses.empty()) {
         CScript s = GetScriptForDestination(*refundAddresses.begin());
         payments::Output* refund_to = payment.add_refund_to();

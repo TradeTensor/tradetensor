@@ -3,8 +3,8 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-BUILDDIR="/mnt/d/hcb/cds"
-EXEEXT=".exe"
+BUILDDIR="/mnt/d/hcb/tradetensor-2"
+EXEEXT=""
 
 # These will turn into comments if they were disabled when configuring.
 ENABLE_WALLET=1

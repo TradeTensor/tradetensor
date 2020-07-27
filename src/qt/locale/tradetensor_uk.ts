@@ -1,15 +1,5 @@
 <TS language="uk" version="2.1">
 <context>
-    <name>AddNewAddressDialog</name>
-    <message>
-        <source>Address</source>
-        <translation>Адреса</translation>
-    </message>
-    </context>
-<context>
-    <name>AddNewContactDialog</name>
-    </context>
-<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
@@ -72,12 +62,12 @@
         <translation>Адреса отримання</translation>
     </message>
     <message>
-        <source>These are your TradeTensor addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Це ваші TradeTensor-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
+        <source>These are your Tradetensor addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Це ваші Tradetensor-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
     </message>
     <message>
-        <source>These are your TradeTensor addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Це ваші TradeTensor адреси для отримання платежів. Для кожної транзакції рекомендується використовувати нову адресу одержувача.</translation>
+        <source>These are your Tradetensor addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Це ваші Tradetensor адреси для отримання платежів. Для кожної транзакції рекомендується використовувати нову адресу одержувача.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -109,9 +99,6 @@
     </message>
 </context>
 <context>
-    <name>AddressLabelRow</name>
-    </context>
-<context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
@@ -127,13 +114,30 @@
     </message>
 </context>
 <context>
-    <name>AddressesWidget</name>
-    </context>
-<context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
         <translation>Кодове слово</translation>
+    </message>
+    <message>
+        <source>Enter passphrase</source>
+        <translation>Введіть кодове слово</translation>
+    </message>
+    <message>
+        <source>New passphrase</source>
+        <translation>Нове кодове слово</translation>
+    </message>
+    <message>
+        <source>Repeat new passphrase</source>
+        <translation>Повторіть кодове слово</translation>
+    </message>
+    <message>
+        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
+        <translation>Для ввімкнення тривіальної відправки коштів при скомпрометуванні операційної системи. Не забезпечує реальної безпеки.</translation>
+    </message>
+    <message>
+        <source>For anonymization and staking only</source>
+        <translation>Лише для анонімності</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -172,8 +176,8 @@
         <translation>Підтвердження шифрування гаманця</translation>
     </message>
     <message>
-        <source>TradeTensor will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TNSRs from being stolen by malware infecting your computer.</source>
-        <translation>TradeTensor зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші TNSR'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
+        <source>Tradetensor will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
+        <translation>Tradetensor зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші TNSR'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -189,13 +193,17 @@
     </message>
     </context>
 <context>
-    <name>BanTableModel</name>
+    <name>Bip38ToolDialog</name>
+    </context>
+<context>
+    <name>BitcoinGUI</name>
+    <message>
+        <source>Unlock wallet</source>
+        <translation>Розблокувати гаманець</translation>
+    </message>
     </context>
 <context>
     <name>BlockExplorer</name>
-    </context>
-<context>
-    <name>CSRow</name>
     </context>
 <context>
     <name>ClientModel</name>
@@ -208,42 +216,10 @@
     </message>
     </context>
 <context>
-    <name>CoinControlPivWidget</name>
-    <message>
-        <source>Label</source>
-        <translation>Мітка</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Адреса</translation>
-    </message>
-    </context>
-<context>
-    <name>ColdStakingWidget</name>
-    </context>
-<context>
-    <name>ContactDropdownRow</name>
-    </context>
-<context>
-    <name>DashboardWidget</name>
-    </context>
-<context>
-    <name>DefaultDialog</name>
-    </context>
-<context>
-    <name>DenomGenerationDialog</name>
-    </context>
-<context>
     <name>EditAddressDialog</name>
     </context>
 <context>
-    <name>ExpandableButton</name>
-    </context>
-<context>
     <name>FreespaceChecker</name>
-    </context>
-<context>
-    <name>GovernancePage</name>
     </context>
 <context>
     <name>HelpMessageDialog</name>
@@ -252,47 +228,26 @@
     <name>Intro</name>
     </context>
 <context>
-    <name>LoadingDialog</name>
-    </context>
-<context>
-    <name>LockUnlock</name>
-    </context>
-<context>
-    <name>MNRow</name>
-    </context>
-<context>
-    <name>MasterNodeWizardDialog</name>
+    <name>MasternodeList</name>
     <message>
         <source>Address</source>
         <translation>Адреса</translation>
     </message>
     </context>
 <context>
-    <name>MasterNodesWidget</name>
+    <name>MultiSendDialog</name>
     </context>
 <context>
-    <name>MnInfoDialog</name>
-    </context>
-<context>
-    <name>MyAddressRow</name>
-    </context>
-<context>
-    <name>NavMenuWidget</name>
+    <name>ObfuscationConfig</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
     </context>
 <context>
-    <name>OptionButton</name>
-    </context>
-<context>
     <name>OptionsDialog</name>
     </context>
 <context>
-    <name>TradeTensorGUI</name>
-    </context>
-<context>
-    <name>PWidget</name>
+    <name>OverviewPage</name>
     </context>
 <context>
     <name>PaymentServer</name>
@@ -301,22 +256,30 @@
     <name>PeerTableModel</name>
     </context>
 <context>
-    <name>PrivacyWidget</name>
-    </context>
-<context>
-    <name>ProposalFrame</name>
+    <name>PrivacyDialog</name>
     </context>
 <context>
     <name>QObject</name>
     </context>
 <context>
+    <name>QRImageWidget</name>
+    </context>
+<context>
     <name>RPCConsole</name>
     </context>
 <context>
-    <name>ReceiveDialog</name>
+    <name>ReceiveCoinsDialog</name>
     </context>
 <context>
-    <name>ReceiveWidget</name>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Address</source>
+        <translation>Адреса</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Мітка</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -325,99 +288,37 @@
         <translation>Мітка</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Адреса</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(без міток)</translation>
     </message>
     </context>
 <context>
-    <name>RequestDialog</name>
+    <name>SendCoinsDialog</name>
     <message>
-        <source>Label</source>
-        <translation>Мітка</translation>
+        <source>(no label)</source>
+        <translation>(без міток)</translation>
     </message>
-    </context>
+</context>
 <context>
-    <name>SendChangeAddressDialog</name>
-    </context>
-<context>
-    <name>SendCustomFeeDialog</name>
-    </context>
-<context>
-    <name>SendMultiRow</name>
-    </context>
-<context>
-    <name>SendWidget</name>
-    </context>
-<context>
-    <name>SettingsBackupWallet</name>
-    </context>
-<context>
-    <name>SettingsBitToolWidget</name>
-    <message>
-        <source>Enter passphrase</source>
-        <translation>Введіть кодове слово</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsConsoleWidget</name>
-    </context>
-<context>
-    <name>SettingsDisplayOptionsWidget</name>
-    </context>
-<context>
-    <name>SettingsFaqWidget</name>
-    </context>
-<context>
-    <name>SettingsInformationWidget</name>
-    </context>
-<context>
-    <name>SettingsMainOptionsWidget</name>
-    </context>
-<context>
-    <name>SettingsMultisendDialog</name>
-    </context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    </context>
-<context>
-    <name>SettingsSignMessageWidgets</name>
-    </context>
-<context>
-    <name>SettingsWalletOptionsWidget</name>
-    </context>
-<context>
-    <name>SettingsWalletRepairWidget</name>
-    </context>
-<context>
-    <name>SettingsWidget</name>
+    <name>SendCoinsEntry</name>
     </context>
 <context>
     <name>ShutdownWindow</name>
     </context>
 <context>
-    <name>SnackBar</name>
-    </context>
-<context>
-    <name>Splash</name>
+    <name>SignVerifyMessageDialog</name>
     </context>
 <context>
     <name>SplashScreen</name>
-    </context>
-<context>
-    <name>TooltipMenu</name>
-    </context>
-<context>
-    <name>TopBar</name>
     </context>
 <context>
     <name>TrafficGraphWidget</name>
     </context>
 <context>
     <name>TransactionDesc</name>
+    </context>
+<context>
+    <name>TransactionDescDialog</name>
     </context>
 <context>
     <name>TransactionTableModel</name>
@@ -427,27 +328,48 @@
     </message>
     </context>
 <context>
-    <name>TxDetailDialog</name>
+    <name>TransactionView</name>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Файл, розділений комами (*.csv)</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Мітка</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адреса</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Не вдалося експортувати</translation>
+    </message>
     </context>
 <context>
-    <name>TxRow</name>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletFrame</name>
     </context>
 <context>
     <name>WalletModel</name>
     </context>
 <context>
-    <name>WalletPasswordDialog</name>
+    <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>Експорт</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Експортуйтувати дані поточної вкладки у файл</translation>
+    </message>
     </context>
 <context>
-    <name>WelcomeContentWidget</name>
+    <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
-    </context>
-<context>
-    <name>tradetensor-core</name>
-    </context>
-<context>
-    <name>send</name>
+    <name>tradetensor-network-v2</name>
     </context>
 </TS>

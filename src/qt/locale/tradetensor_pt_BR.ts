@@ -1,73 +1,5 @@
 <TS language="pt_BR" version="2.1">
 <context>
-    <name>AddNewAddressDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation>Diálogo</translation>
-    </message>
-    <message>
-        <source>My Address</source>
-        <translation>Meu endereço</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Endereço</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
-    </message>
-</context>
-<context>
-    <name>AddNewContactDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation>Diálogo</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
-    </message>
-    <message>
-        <source>Edit Contact</source>
-        <translation>Editar Contato </translation>
-    </message>
-    <message>
-        <source>Set a label for the selected address</source>
-        <translation>Defina um nome para o endereço selecionado</translation>
-    </message>
-    <message>
-        <source>Enter a name for the address (e.g Exchange)</source>
-        <translation>Digite um nome para o endereço (por exemplo, Corretora)</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
-    </message>
-    <message>
-        <source>Edit label for the selected address:
-%1</source>
-        <translation>Edite o nome do endereço selecionado:
-%1</translation>
-    </message>
-</context>
-<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
@@ -130,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your TradeTensor addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços TradeTensor para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your Tradetensor addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Tradetensor para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your TradeTensor addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços TradeTensor para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your Tradetensor addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Tradetensor para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -167,21 +99,6 @@
     </message>
 </context>
 <context>
-    <name>AddressLabelRow</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Bob Allen</source>
-        <translation>Bob Allen</translation>
-    </message>
-    <message>
-        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
-        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
-    </message>
-</context>
-<context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
@@ -192,118 +109,8 @@
         <translation>Endereço</translation>
     </message>
     <message>
-        <source>Date</source>
-        <translation>Data</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(sem rótulo)</translation>
-    </message>
-</context>
-<context>
-    <name>AddressesWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Send</source>
-        <translation>Enviar </translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>Contact name</source>
-        <translation>Nome do contato</translation>
-    </message>
-    <message>
-        <source>Enter address</source>
-        <translation>Insira o endereço</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
-    </message>
-    <message>
-        <source>Contacts</source>
-        <translation>Contatos</translation>
-    </message>
-    <message>
-        <source>You can add a new one in the options menu to the side.</source>
-        <translation>Você pode adicionar um novo no menu de opções ao lado.</translation>
-    </message>
-    <message>
-        <source>No contacts yet</source>
-        <translation>Ainda não há contatos</translation>
-    </message>
-    <message>
-        <source>e.g. John Doe</source>
-        <translation>por exemplo. John Doe</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
-    </message>
-    <message>
-        <source>Invalid Contact Address</source>
-        <translation>Endereço de contato inválido</translation>
-    </message>
-    <message>
-        <source>Cannot store your own address as contact</source>
-        <translation>Não é possível armazenar seu próprio endereço como contato</translation>
-    </message>
-    <message>
-        <source>Address already stored, label: %1</source>
-        <translation>Endereço já armazenado, nome: %1</translation>
-    </message>
-    <message>
-        <source>New Contact Stored</source>
-        <translation>Novo contato armazenado</translation>
-    </message>
-    <message>
-        <source>Error Storing Contact</source>
-        <translation>Erro ao armazenar o contato</translation>
-    </message>
-    <message>
-        <source>Contact edited</source>
-        <translation>Contato editado</translation>
-    </message>
-    <message>
-        <source>Contact edit failed</source>
-        <translation>Falha na edição do contato</translation>
-    </message>
-    <message>
-        <source>Delete Contact</source>
-        <translation>Remover Contato </translation>
-    </message>
-    <message>
-        <source>You are just about to remove the contact:
-
-%1
-
-Are you sure?</source>
-        <translation>Você está prestes a remover o contato:
-
-%1
-Você tem certeza?</translation>
-    </message>
-    <message>
-        <source>Contact Deleted</source>
-        <translation>Contato Removido</translation>
-    </message>
-    <message>
-        <source>Error deleting a contact</source>
-        <translation>Erro ao remover contato</translation>
-    </message>
-    <message>
-        <source>Address copied</source>
-        <translation>Endereço copiado</translation>
     </message>
 </context>
 <context>
@@ -313,12 +120,20 @@ Você tem certeza?</translation>
         <translation>Palavra-chave</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>Enter passphrase</source>
+        <translation>Insira palavra-chave</translation>
     </message>
     <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
+        <source>New passphrase</source>
+        <translation>Nova palavra-chave</translation>
+    </message>
+    <message>
+        <source>Repeat new passphrase</source>
+        <translation>Repita a nova palavra-chave</translation>
+    </message>
+    <message>
+        <source>For anonymization and staking only</source>
+        <translation>Para anonimização e staking somente</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -331,12 +146,6 @@ Você tem certeza?</translation>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Esta operação necessita a palavra-chave da sua carteira para que possa desbloqueá-la.</translation>
-    </message>
-    <message>
-        <source>Unlock wallet
-for staking</source>
-        <translation>Desbloquear carteira
-para 'Staking'</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -363,16 +172,8 @@ para 'Staking'</translation>
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>ENCRYPT</source>
-        <translation>CRIPTOGRAFAR </translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>TradeTensor will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TNSRs from being stolen by malware infecting your computer.</source>
-        <translation>TradeTensor vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas TNSRs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>Tradetensor will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
+        <translation>Tradetensor vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas RUPs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -393,10 +194,6 @@ para 'Staking'</translation>
     <message>
         <source>Wallet encryption failed</source>
         <translation>Criptografia da carteira falhou</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -428,14 +225,566 @@ para 'Staking'</translation>
     </message>
 </context>
 <context>
-    <name>BanTableModel</name>
+    <name>Bip38ToolDialog</name>
     <message>
-        <source>IP/Netmask</source>
-        <translation>IP/Netmask</translation>
+        <source>BIP 38 Tool</source>
+        <translation>Ferramenta da BIP 38</translation>
     </message>
     <message>
-        <source>Banned Until</source>
-        <translation>Proibido até</translation>
+        <source>&amp;BIP 38 Encrypt</source>
+        <translation>&amp;Encriptação BIP 38</translation>
+    </message>
+    <message>
+        <source>Enter a Tradetensor Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation>Endereço:</translation>
+    </message>
+    <message>
+        <source>The Tradetensor address to sign the message with</source>
+        <translation>O endereço Tradetensor para assinar a mensagem</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Escolha o endereço previamente utilizado</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Cole o endereço da área de transferência</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Passphrase: </source>
+        <translation>Palavra-chave:</translation>
+    </message>
+    <message>
+        <source>Encrypted Key:</source>
+        <translation>Chave encriptada:</translation>
+    </message>
+    <message>
+        <source>Copy the current signature to the system clipboard</source>
+        <translation>Copia a assinatura atual do sistema de transferência</translation>
+    </message>
+    <message>
+        <source>Sign the message to prove you own this Tradetensor address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço Tradetensor</translation>
+    </message>
+    <message>
+        <source>Encrypt &amp;Key</source>
+        <translation>Chave encriptada:</translation>
+    </message>
+    <message>
+        <source>Reset all sign message fields</source>
+        <translation>Reiniciar todos os campos de mensagem</translation>
+    </message>
+    <message>
+        <source>Clear &amp;All</source>
+        <translation>Limpar &amp;Tudo</translation>
+    </message>
+    <message>
+        <source>The Tradetensor address the message was signed with</source>
+        <translation>O endereço Tradetensor que assinou a mensagem</translation>
+    </message>
+    <message>
+        <source>Verify the message to ensure it was signed with the specified Tradetensor address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Tradetensor especificado.</translation>
+    </message>
+    <message>
+        <source>Decrypt &amp;Key</source>
+        <translation>Descriptografar &amp;Chave</translation>
+    </message>
+    <message>
+        <source>Reset all verify message fields</source>
+        <translation>Reiniciar todos os campos de mensagem</translation>
+    </message>
+    <message>
+        <source>Decrypted Key:</source>
+        <translation>Chave desencriptada:</translation>
+    </message>
+    <message>
+        <source>Import Address</source>
+        <translation>Importar endereço</translation>
+    </message>
+    <message>
+        <source>Click "Decrypt Key" to compute key</source>
+        <translation>Clique em "Descriptografar Chave" para computar chave</translation>
+    </message>
+    <message>
+        <source>The entered passphrase is invalid. </source>
+        <translation>A senha informada é inválida.</translation>
+    </message>
+    <message>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation>Permitido: 0-9,a-z,A-Z.</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>O endereço informado é inválido.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Favor verificar o endereço e tente novamente.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>O endereço inserido não se refere a uma chave.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Desbloqueio da carteira foi cancelado.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>A chave privada para o endereço fornecido não está disponível.</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt.</source>
+        <translation>Falhou ao desencriptar.</translation>
+    </message>
+    <message>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Favor verificar a chave e a palavra-chave e tentar novamente.</translation>
+    </message>
+    <message>
+        <source>Data Not Valid.</source>
+        <translation>Informação não é válida.</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>Favor tentar novamente.</translation>
+    </message>
+    <message>
+        <source>Please wait while key is imported</source>
+        <translation>Favor aguardar enquanto a chave é importada</translation>
+    </message>
+    <message>
+        <source>Key Already Held By Wallet</source>
+        <translation>Chave já registrada pela carteira</translation>
+    </message>
+    <message>
+        <source>Error Adding Key To Wallet</source>
+        <translation>Erro ao adicionar chave à Carteira</translation>
+    </message>
+    <message>
+        <source>Successfully Added Private Key To Wallet</source>
+        <translation>Chave privada adicionada com sucesso à carteira</translation>
+    </message>
+</context>
+<context>
+    <name>BitcoinGUI</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Carteira</translation>
+    </message>
+    <message>
+        <source>Node</source>
+        <translation>Nó</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation>&amp;Visão Geral</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation>Mostrar visão geral da carteira</translation>
+    </message>
+    <message>
+        <source>&amp;Send</source>
+        <translation>&amp;Enviar</translation>
+    </message>
+    <message>
+        <source>&amp;Receive</source>
+        <translation>&amp;Receber</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation>&amp;Transações</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation>Olhar histórico de transação</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation>&amp;Sair</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation>Sair da aplicação</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation>Sobre &amp;Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation>Mostrar informação sobre Qt</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation>&amp;Opções...</translation>
+    </message>
+    <message>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Mostrar / Esconder</translation>
+    </message>
+    <message>
+        <source>Show or hide the main Window</source>
+        <translation>Mostrar ou esconder a janela principal</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation>&amp;Criptografar carteira</translation>
+    </message>
+    <message>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation>Criptografar as chaves privadas que pertencem à sua carteira</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation>&amp;Carteira de backup...</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation>Backup da carteira em outro local</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation>&amp;Alterar palavra-chave...</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Altera a palavra-chave utilizada para encriptação da carteira</translation>
+    </message>
+    <message>
+        <source>&amp;Unlock Wallet...</source>
+        <translation>&amp;Destravar carteira...</translation>
+    </message>
+    <message>
+        <source>Unlock wallet</source>
+        <translation>Desbloquear carteira</translation>
+    </message>
+    <message>
+        <source>&amp;Lock Wallet</source>
+        <translation>&amp;Travar carteira</translation>
+    </message>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation>Assinar &amp;mensagem...</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message...</source>
+        <translation>&amp;Verificar mensagem...</translation>
+    </message>
+    <message>
+        <source>&amp;Information</source>
+        <translation>&amp;Informação</translation>
+    </message>
+    <message>
+        <source>Show diagnostic information</source>
+        <translation>Mostrar informação de diagnóstico</translation>
+    </message>
+    <message>
+        <source>&amp;Debug console</source>
+        <translation>&amp;Debug console</translation>
+    </message>
+    <message>
+        <source>Open debugging console</source>
+        <translation>Abra o console de Debug</translation>
+    </message>
+    <message>
+        <source>&amp;Network Monitor</source>
+        <translation>&amp;Monitor de rede</translation>
+    </message>
+    <message>
+        <source>Show network monitor</source>
+        <translation>Mostrar monitor de rede</translation>
+    </message>
+    <message>
+        <source>&amp;Peers list</source>
+        <translation>&amp;Lista de pares</translation>
+    </message>
+    <message>
+        <source>Show peers info</source>
+        <translation>Mostrar informação da lista de pares</translation>
+    </message>
+    <message>
+        <source>Wallet &amp;Repair</source>
+        <translation>Carteira &amp;Reparo</translation>
+    </message>
+    <message>
+        <source>Show wallet repair options</source>
+        <translation>Mostrar opções de reparo de carteira</translation>
+    </message>
+    <message>
+        <source>Open configuration file</source>
+        <translation>Abrir arquivo de configuração</translation>
+    </message>
+    <message>
+        <source>Show Automatic &amp;Backups</source>
+        <translation>Mostrar &amp;Backups automáticos</translation>
+    </message>
+    <message>
+        <source>Show automatically created wallet backups</source>
+        <translation>Mostrar backups de carteira criados automaticamente</translation>
+    </message>
+    <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;Endereços de envio...</translation>
+    </message>
+    <message>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Mostrar a lista de endereços de envio e rótulos utilizados</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;Endereços de recebimento...</translation>
+    </message>
+    <message>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Mostrar a lista de endereços de recebimento e rótulos utilizados</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI...</source>
+        <translation>Abrir &amp;URI...</translation>
+    </message>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Opções de linha de comando</translation>
+    </message>
+    <message>
+        <source>Synchronizing additional data: %p%</source>
+        <translation>Sincronizando informação adicional: %p%</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation>&amp;Arquivo</translation>
+    </message>
+    <message>
+        <source>&amp;Settings</source>
+        <translation>&amp;Configurações</translation>
+    </message>
+    <message>
+        <source>&amp;Tools</source>
+        <translation>&amp;Ferramentas</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation>&amp;Ajuda</translation>
+    </message>
+    <message>
+        <source>Tabs toolbar</source>
+        <translation>Ferramentas de abas</translation>
+    </message>
+    <message>
+        <source>Tradetensor Core</source>
+        <translation>Tradetensor Core</translation>
+    </message>
+    <message>
+        <source>Send coins to a Tradetensor address</source>
+        <translation>Enviar moedas para um endereço Tradetensor</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and tradetensor: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e tradetensor: URIs)</translation>
+    </message>
+    <message>
+        <source>&amp;Masternodes</source>
+        <translation>&amp;Masternodes</translation>
+    </message>
+    <message>
+        <source>Browse masternodes</source>
+        <translation>Procurar masternodes</translation>
+    </message>
+    <message>
+        <source>&amp;About Tradetensor Core</source>
+        <translation>&amp;Sobre o Tradetensor Core</translation>
+    </message>
+    <message>
+        <source>Show information about Tradetensor Core</source>
+        <translation>Mostra informação sobre o Tradetensor Core</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for Tradetensor</source>
+        <translation>Modificar opções de configuração para Tradetensor</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Tradetensor addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços Tradetensor para provar que você os detém</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Tradetensor addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços Tradetensor especificados</translation>
+    </message>
+    <message>
+        <source>&amp;BIP38 tool</source>
+        <translation>&amp;Ferramenta da BIP38</translation>
+    </message>
+    <message>
+        <source>Encrypt and decrypt private keys using a passphrase</source>
+        <translation>Criptografar e descriptografar chaves privadas usando uma palavra-chave</translation>
+    </message>
+    <message>
+        <source>&amp;MultiSend</source>
+        <translation>&amp;MultiSend</translation>
+    </message>
+    <message>
+        <source>MultiSend Settings</source>
+        <translation>Configurações MultiSend</translation>
+    </message>
+    <message>
+        <source>Open Wallet &amp;Configuration File</source>
+        <translation>Abrir arquivo de &amp;Configuração de Carteira</translation>
+    </message>
+    <message>
+        <source>Open &amp;Masternode Configuration File</source>
+        <translation>Abrir arquivo de Configuração de &amp;Masternode</translation>
+    </message>
+    <message>
+        <source>Open Masternode configuration file</source>
+        <translation>Abrir arquivo de configuração de Masternode</translation>
+    </message>
+    <message>
+        <source>Open a Tradetensor: URI or payment request</source>
+        <translation>Abrir um Tradetensor: URI ou requisição de pagamento</translation>
+    </message>
+    <message>
+        <source>&amp;Blockchain explorer</source>
+        <translation>Explorador da &amp;Blockchain</translation>
+    </message>
+    <message>
+        <source>Block explorer window</source>
+        <translation>Janela de exploração de blocos</translation>
+    </message>
+    <message>
+        <source>Show the Tradetensor Core help message to get a list with possible Tradetensor command-line options</source>
+        <translation>Mostra a ajuda da Tradetensor Core para receber uma lista com possíveis opções de linha de comando Tradetensor</translation>
+    </message>
+    <message>
+        <source>Tradetensor Core client</source>
+        <translation>Cliente Core Tradetensor</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation>Sincronizando com a rede...</translation>
+    </message>
+    <message>
+        <source>Importing blocks from disk...</source>
+        <translation>Importando blocos do disco...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk...</source>
+        <translation>Reindexando blocos no disco...</translation>
+    </message>
+    <message>
+        <source>No block source available...</source>
+        <translation>Nenhuma fonte de blocos disponível...</translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation>Atualizado</translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 e %2</translation>
+    </message>
+    <message>
+        <source>%1 behind</source>
+        <translation>%1 atrás</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation>Correndo atrás...</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Último bloco recebido foi gerado há %1 atrás.</translation>
+    </message>
+    <message>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation>Transações depois disso não serão visíveis.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Erro</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Aviso</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informação</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation>Transação enviada</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation>Transação chegando</translation>
+    </message>
+    <message>
+        <source>Sent MultiSend transaction</source>
+        <translation>Enviar transação MultiSend</translation>
+    </message>
+    <message>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation>Data: %1
+
+Valor: %2
+
+Tipo: %3
+
+Endereço: %4
+</translation>
+    </message>
+    <message>
+        <source>Staking is active
+ MultiSend: %1</source>
+        <translation>Staking está ativo
+
+MultiSend: %1</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>Ativo</translation>
+    </message>
+    <message>
+        <source>Not Active</source>
+        <translation>Não está ativo</translation>
+    </message>
+    <message>
+        <source>Staking is not active
+ MultiSend: %1</source>
+        <translation>Staking não está ativo
+
+MultiSend: %1</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation>A Carteira está &lt;b&gt;criptografada&lt;/b&gt; e atualmente &lt;b&gt;desbloqueada&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
+        <translation>A Carteira está &lt;b&gt;criptografada&lt;/b&gt; e atualmente &lt;b&gt;desbloqueada&lt;/b&gt; somente para anonimização e staking</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation>A carteira está &lt;b&gt;criptografada&lt;/b&gt; e atualmente &lt;b&gt;travada&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -443,14 +792,6 @@ para 'Staking'</translation>
     <message>
         <source>Blockchain Explorer</source>
         <translation>Explorador Blockchain</translation>
-    </message>
-    <message>
-        <source>Back</source>
-        <translation>Voltar</translation>
-    </message>
-    <message>
-        <source>Forward</source>
-        <translation>Avançar</translation>
     </message>
     <message>
         <source>Address / Block / Transaction</source>
@@ -470,18 +811,7 @@ para 'Staking'</translation>
     </message>
 </context>
 <context>
-    <name>CSRow</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    </context>
-<context>
     <name>ClientModel</name>
-    <message>
-        <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
-        <translation>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Desconhecido: %5)</translation>
-    </message>
     <message>
         <source>Network Alert</source>
         <translation>Alerta de rede</translation>
@@ -498,6 +828,14 @@ para 'Staking'</translation>
         <translation>Bytes:</translation>
     </message>
     <message>
+        <source>Amount:</source>
+        <translation>Quantia:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioridade:</translation>
+    </message>
+    <message>
         <source>Fee:</source>
         <translation>Taxa:</translation>
     </message>
@@ -506,12 +844,20 @@ para 'Staking'</translation>
         <translation>Seleção de Moedas</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Fração de saldo:</translation>
+        <source>After Fee:</source>
+        <translation>Após taxas:</translation>
     </message>
     <message>
         <source>Change:</source>
         <translation>Troco:</translation>
+    </message>
+    <message>
+        <source>(un)select all</source>
+        <translation>(de)selecionar todos</translation>
+    </message>
+    <message>
+        <source>toggle lock state</source>
+        <translation>alternar estado de travamento</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -530,44 +876,12 @@ para 'Staking'</translation>
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
-    </message>
-    <message>
-        <source>0.00 TNSR</source>
-        <translation>0 TNSR</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation>Selecionar todas</translation>
-    </message>
-    <message>
-        <source>Toggle lock state</source>
-        <translation>Alternar estado de bloqueio</translation>
-    </message>
-    <message>
         <source>Received with label</source>
         <translation>Recebido com rótulo</translation>
     </message>
     <message>
         <source>Received with address</source>
         <translation>Recebido no endereço</translation>
-    </message>
-    <message>
-        <source>After Fee: </source>
-        <translation>Após taxa:</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
     </message>
     <message>
         <source>Date</source>
@@ -580,6 +894,10 @@ para 'Staking'</translation>
     <message>
         <source>Confirmed</source>
         <translation>Confirmado</translation>
+    </message>
+    <message>
+        <source>Priority</source>
+        <translation>Prioridade</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -626,16 +944,8 @@ para 'Staking'</translation>
         <translation>Copiar prioridade</translation>
     </message>
     <message>
-        <source>Copy dust</source>
-        <translation>Copiar fração</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Copiar troco</translation>
-    </message>
-    <message>
-        <source>Unselect all</source>
-        <translation>Desmarcar todas</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
@@ -656,6 +966,10 @@ para 'Staking'</translation>
     <message>
         <source>medium-high</source>
         <translation>médio-alto</translation>
+    </message>
+    <message>
+        <source>Can vary +/- %1 duff(s) per input.</source>
+        <translation>pode variar entre +/-%1 duff(s) por input</translation>
     </message>
     <message>
         <source>medium</source>
@@ -718,10 +1032,6 @@ para 'Staking'</translation>
         <translation>Este rótulo fica vermelho se qualquer recipiente receber uma quantia menor que %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Pode variar +/- %1 upiv por entrada.</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(sem rótulo)</translation>
     </message>
@@ -732,338 +1042,6 @@ para 'Staking'</translation>
     <message>
         <source>(change)</source>
         <translation>(mudar)</translation>
-    </message>
-</context>
-<context>
-    <name>CoinControlPivWidget</name>
-    <message>
-        <source>Dialog</source>
-        <translation>Diálogo</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
-    </message>
-    <message>
-        <source>TNSR:</source>
-        <translation>TNSR:</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Quantidade:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Taxa:</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Quantidade</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Endereço</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Tipo</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Data</translation>
-    </message>
-    <message>
-        <source>Confirmations</source>
-        <translation>Confirmações</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>CheckBox</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Fração de saldo:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Troco:</translation>
-    </message>
-    <message>
-        <source>After Fee: </source>
-        <translation>Após taxa:</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
-    </message>
-</context>
-<context>
-    <name>ColdStakingWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Address copied</source>
-        <translation>Endereço copiado</translation>
-    </message>
-    </context>
-<context>
-    <name>ContactDropdownRow</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Bob Allen</source>
-        <translation>Bob Allen</translation>
-    </message>
-    </context>
-<context>
-    <name>DashboardWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Transactions</source>
-        <translation>Transações</translation>
-    </message>
-    <message>
-        <source>You can see here the history of your account</source>
-        <translation>Você pode ver aqui o histórico da sua conta</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Aviso</translation>
-    </message>
-    <message>
-        <source>No transactions</source>
-        <translation>Nenhuma transação</translation>
-    </message>
-    <message>
-        <source>Staking Rewards</source>
-        <translation>Recompensas do Staking </translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Staking statistics</source>
-        <translation>Estatísticas de Staking</translation>
-    </message>
-    <message>
-        <source>TNSR</source>
-        <translation>TNSR</translation>
-    </message>
-    <message>
-        <source>zTNSR</source>
-        <translation>zTNSR</translation>
-    </message>
-    <message>
-        <source>Sort by</source>
-        <translation>Organizar por</translation>
-    </message>
-    <message>
-        <source>Days</source>
-        <translation>Dias </translation>
-    </message>
-    <message>
-        <source>Months</source>
-        <translation>Meses </translation>
-    </message>
-    <message>
-        <source>Years</source>
-        <translation>Anos</translation>
-    </message>
-    <message>
-        <source>Filter by</source>
-        <translation>Filtrado por</translation>
-    </message>
-    <message>
-        <source>LabelText</source>
-        <translation>Nome do Texto</translation>
-    </message>
-    <message>
-        <source>You can view your account's history</source>
-        <translation>Você pode ver o histórico da sua conta</translation>
-    </message>
-    <message>
-        <source>Amount of TNSR and zTNSR staked.</source>
-        <translation>Quantidade de TNSR e zTNSR em Staking.</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>Tudo</translation>
-    </message>
-    <message>
-        <source>Received</source>
-        <translation>Recebido</translation>
-    </message>
-    <message>
-        <source>Sent</source>
-        <translation>Enviado</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Minerado</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Cunhado</translation>
-    </message>
-    <message>
-        <source>MN reward</source>
-        <translation>Recompensa MN</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>Para si mesmo</translation>
-    </message>
-    <message>
-        <source>Please wait until the wallet is fully synced to see your correct balance</source>
-        <translation>Aguarde até que a carteira esteja totalmente sincronizada para ver seu saldo correto</translation>
-    </message>
-    <message>
-        <source>No transactions yet</source>
-        <translation>Nenhuma transação ainda</translation>
-    </message>
-    <message>
-        <source>How to get TNSR or zTNSR</source>
-        <translation>Como obter o TNSR ou zTNSR</translation>
-    </message>
-    <message>
-        <source>You can verify the staking activity in the status bar at the top right of the wallet.
-It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
-        <translation>Você pode verificar a atividade de Staking na barra de status no canto superior da direito da carteira.
-Ele será iniciado automaticamente assim que a carteira tiver confirmações suficientes nos saldos não utilizados e a carteira for sincronizada.</translation>
-    </message>
-    <message>
-        <source>You have no staking rewards</source>
-        <translation>Você não tem recompensas de Staking</translation>
-    </message>
-    <message>
-        <source>No charts library</source>
-        <translation>Não há  biblioteca de gráficos</translation>
-    </message>
-    <message>
-        <source>Loading chart..</source>
-        <translation>Carregando gráfico ..</translation>
-    </message>
-    <message>
-        <source>Error loading chart, invalid show option</source>
-        <translation>Erro ao carregar o gráfico, opção de exibição inválida</translation>
-    </message>
-    <message>
-        <source>Error loading chart: %1</source>
-        <translation>Erro ao carregar o gráfico: %1</translation>
-    </message>
-</context>
-<context>
-    <name>DefaultDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
-    </message>
-    <message>
-        <source>Text Label</source>
-        <translation>Texto Rótulo</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
-    </message>
-</context>
-<context>
-    <name>DenomGenerationDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
-    </message>
-    <message>
-        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
-        <translation>Isso desbloqueará sua carteira totalmente para que qualquer pessoa que tenha acesso a ela e possa gastar até que a carteira seja fechada ou bloqueada novamente.</translation>
-    </message>
-    <message>
-        <source>5000</source>
-        <translation>5000</translation>
-    </message>
-    <message>
-        <source>100</source>
-        <translation>100</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation>10</translation>
-    </message>
-    <message>
-        <source>1000</source>
-        <translation>1000</translation>
-    </message>
-    <message>
-        <source>50</source>
-        <translation>50</translation>
-    </message>
-    <message>
-        <source>500</source>
-        <translation>500</translation>
-    </message>
-    <message>
-        <source>5</source>
-        <translation>5</translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation>1</translation>
-    </message>
-    <message>
-        <source>Select All</source>
-        <translation>Selecionar Todos</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
     </message>
 </context>
 <context>
@@ -1105,8 +1083,8 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TradeTensor address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de TradeTensor</translation>
+        <source>The entered address "%1" is not a valid Tradetensor address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de Tradetensor</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1119,13 +1097,6 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
     <message>
         <source>New key generation failed.</source>
         <translation>A geração da nova chave falhou.</translation>
-    </message>
-</context>
-<context>
-    <name>ExpandableButton</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
     </message>
 </context>
 <context>
@@ -1152,65 +1123,22 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
     </message>
 </context>
 <context>
-    <name>GovernancePage</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>GOVERNANCE</source>
-        <translation>GOVERNANÇA</translation>
-    </message>
-    <message>
-        <source>Update Proposals</source>
-        <translation>Atualizar propostas</translation>
-    </message>
-    <message>
-        <source>Next super block:</source>
-        <translation>Próximo super bloco:</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>Blocks to next super block:</source>
-        <translation>Blocos para o próximo super bloco:</translation>
-    </message>
-    <message>
-        <source>Days to budget payout (estimate):</source>
-        <translation>Dias para o orçamento de pagamento (estimativa):</translation>
-    </message>
-    <message>
-        <source>Allotted budget:</source>
-        <translation>Orçamento alocado:</translation>
-    </message>
-    <message>
-        <source>Budget left:</source>
-        <translation>Orçamento restante:</translation>
-    </message>
-    <message>
-        <source>Masternodes count:</source>
-        <translation>Contagem de masternodes:</translation>
-    </message>
-</context>
-<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>versão</translation>
     </message>
     <message>
-        <source>TradeTensor Core</source>
-        <translation>TradeTensor Core</translation>
+        <source>Tradetensor Core</source>
+        <translation>Tradetensor Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TradeTensor Core</source>
-        <translation>Sobre o TradeTensor Core</translation>
+        <source>About Tradetensor Core</source>
+        <translation>Sobre o Tradetensor Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1225,18 +1153,6 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
         <translation>opções de linha de comando</translation>
     </message>
     <message>
-        <source>UI Options:</source>
-        <translation>Opções de UI:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Escolher diretório de informações ao inicializar (padrão: %u)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Mostrar tela inicial na inicialização (padrão: %u)</translation>
-    </message>
-    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Definir linguagem, por exemplo "de_DE (padrão: local do sistema)</translation>
     </message>
@@ -1248,10 +1164,6 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Define certificados raiz SSL para requisição de pagamento (padrão: -sistema-)</translation>
     </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
-    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -1260,36 +1172,28 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to TradeTensor Core.</source>
-        <translation>Bem-vindo ao TradeTensor Core.</translation>
+        <source>Welcome to Tradetensor Core.</source>
+        <translation>Bem-vindo ao Tradetensor Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TradeTensor Core will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde TradeTensor Core vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where Tradetensor Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Tradetensor Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>TradeTensor Core will download and store a copy of the TradeTensor block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>TradeTensor Core vai baixar e armazenar uma cópia da blockchain TradeTensor. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>Tradetensor Core will download and store a copy of the Tradetensor block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Tradetensor Core vai baixar e armazenar uma cópia da blockchain Tradetensor. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Usar o diretório padrão de dados</translation>
     </message>
     <message>
-        <source>Use a custom data directory</source>
-        <translation>Use um diretório de dados personalizado</translation>
+        <source>Use a custom data directory:</source>
+        <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
-    </message>
-    <message>
-        <source>TradeTensor Core</source>
-        <translation>TradeTensor Core</translation>
+        <source>Tradetensor Core</source>
+        <translation>Tradetensor Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1309,349 +1213,285 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
     </message>
 </context>
 <context>
-    <name>LoadingDialog</name>
+    <name>MasternodeList</name>
     <message>
         <source>Form</source>
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>My Masternodes</source>
+        <translation>Meus Masternodes</translation>
     </message>
     <message>
-        <source>Loading</source>
-        <translation>Carregando</translation>
-    </message>
-    <message>
-        <source>.</source>
-        <translation>.</translation>
-    </message>
-</context>
-<context>
-    <name>LockUnlock</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Unlock Wallet</source>
-        <translation>Desbloquear carteira</translation>
-    </message>
-    <message>
-        <source>Lock Wallet</source>
-        <translation>Bloquear carteira</translation>
-    </message>
-    <message>
-        <source>Staking Only</source>
-        <translation>Somente Staking</translation>
-    </message>
-</context>
-<context>
-    <name>MNRow</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>user_masternode</source>
-        <translation>usuario_masternod</translation>
-    </message>
-    <message>
-        <source>Address: 88.26.164.88:51474</source>
-        <translation>Endereço: 88.26.164.88:51474</translation>
-    </message>
-    <message>
-        <source>Jan. 19, 2019</source>
-        <translation>19 de janeiro de 2019</translation>
-    </message>
-</context>
-<context>
-    <name>MasterNodeWizardDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation>Diálogo</translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation>1</translation>
-    </message>
-    <message>
-        <source>2</source>
-        <translation>2</translation>
-    </message>
-    <message>
-        <source>3</source>
-        <translation>3</translation>
-    </message>
-    <message>
-        <source>Intro</source>
-        <translation>introdução</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>Nome</translation>
+        <source>Alias</source>
+        <translation>Apelido</translation>
     </message>
     <message>
         <source>Address</source>
         <translation>Endereço</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a TradeTensor Masternode you must dedicate 10.000 TNSR (the unit of TradeTensor) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>Para criar um Masternode TradeTensor, você deve dedicar 10.000 TNSR (a unidade do TradeTensor) à rede (no entanto, essas moedas ainda são suas e nunca deixarão sua posse). Você pode desativar o nó e desbloquear as moedas a qualquer momento.</translation>
+        <source>Protocol</source>
+        <translation>Protocolo</translation>
     </message>
     <message>
-        <source>Make sure you have this amount of coins.</source>
-        <translation>Verifique se você tem essa quantidade de moedas.</translation>
+        <source>Status</source>
+        <translation>Situação</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 TNSR will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>A transação de 10.000 TNSR será feita com um novo endereço vazio em sua carteira. O endereço é rotulado com o nome do nó principal.</translation>
+        <source>Active</source>
+        <translation>Ativo</translation>
     </message>
     <message>
-        <source>Address of the node that must always be online running the actual master node.</source>
-        <translation>Endereço do node que deve estar online executando o Masternode.</translation>
+        <source>Last Seen (UTC)</source>
+        <translation>Última vez visto (UTC)</translation>
     </message>
     <message>
-        <source>Enter IP address</source>
-        <translation>Digite o endereço IP</translation>
+        <source>Pubkey</source>
+        <translation>Pubkey</translation>
     </message>
     <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
+        <source>S&amp;tart alias</source>
+        <translation>iniciar apelido</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>Ok</translation>
+        <source>&amp;Update status</source>
+        <translation>&amp;Atualizar situação</translation>
     </message>
     <message>
-        <source>e.g user_masternode</source>
-        <translation>por exemplo, user_masternode</translation>
+        <source>Status will be updated automatically in (sec):</source>
+        <translation>O estado será atualizado automaticamente em (seg):</translation>
     </message>
     <message>
-        <source>NEXT</source>
-        <translation>PRÓXIMO</translation>
+        <source>0</source>
+        <translation>0</translation>
     </message>
     <message>
-        <source>BACK</source>
-        <translation>VOLTAR</translation>
+        <source>Confirm masternode start</source>
+        <translation>Confirmar início de masternode</translation>
     </message>
     <message>
-        <source>address label cannot be empty</source>
-        <translation>o nome do endereço não pode estar vazia</translation>
+        <source>Are you sure you want to start masternode %1?</source>
+        <translation>Você tem certeza que deseja iniciar um masternode %1?</translation>
     </message>
     <message>
-        <source>IP or port cannot be empty</source>
-        <translation>IP ou porta não podem estar vazios</translation>
+        <source>Confirm all masternodes start</source>
+        <translation>Confirmar início de todos os masternodes</translation>
     </message>
     <message>
-        <source>Invalid port number</source>
-        <translation>Número de porta inválido</translation>
+        <source>Are you sure you want to start ALL masternodes?</source>
+        <translation>Você tem certeza que deseja iniciar TODOS os masternodes?</translation>
     </message>
     <message>
-        <source>Invalid masternode.conf file</source>
-        <translation>Arquivo masternode.conf inválido</translation>
+        <source>Command is not available right now</source>
+        <translation>Comando não está disponível agora</translation>
     </message>
     <message>
-        <source>Error parsing masternode.conf file</source>
-        <translation>Erro ao analisar o arquivo masternode.conf</translation>
+        <source>You can't use this command until masternode list is synced</source>
+        <translation>Você não pode utilizar este comando enquanto a lista de masternodes não estiver sincronizada</translation>
     </message>
     <message>
-        <source>Master node created!</source>
-        <translation>Masternode criado!</translation>
+        <source>Confirm missing masternodes start</source>
+        <translation>Confirme o início de masternodes perdidos</translation>
     </message>
     <message>
-        <source>masternode.conf file doesn't exists</source>
-        <translation>O arquivo masternode.conf não existe</translation>
+        <source>Are you sure you want to start MISSING masternodes?</source>
+        <translation>Você tem certeza que deseja iniciar os masternodes PERDIDOS?</translation>
     </message>
 </context>
 <context>
-    <name>MasterNodesWidget</name>
+    <name>MultiSendDialog</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>MultiSend</source>
+        <translation>MultiSend</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>Enter whole numbers 1 - 100</source>
+        <translation>Insira todos os números 1 - 100</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
+        <source>Enter % to Give (1-100)</source>
+        <translation>Insira % para dar (1-100)</translation>
     </message>
     <message>
-        <source>Masternodes</source>
-        <translation>Masternodes</translation>
+        <source>Enter Address to Send to</source>
+        <translation>Insira o endereço a ser enviado</translation>
     </message>
     <message>
-        <source>Full nodes that incentivize node operators to perform the core consensus functions
-and vote on the treasury system receiving a periodic reward.</source>
-        <translation>Nodes completos que incentivam os operadores de nodes a desempenhar as principais funções de consenso
-e votar no sistema de tesouraria recebendo uma recompensa periódica.</translation>
+        <source>Add to MultiSend Vector</source>
+        <translation>Adicionar ao vetor MultiSend</translation>
     </message>
     <message>
-        <source>Create Masternode Controller</source>
-        <translation>Criar controlador Masternode</translation>
+        <source>Add</source>
+        <translation>Adicionar</translation>
     </message>
     <message>
-        <source>No active Masternode yet</source>
-        <translation>Nenhum Masternode ativo ainda</translation>
+        <source>Deactivate MultiSend</source>
+        <translation>Desativar MultiSend</translation>
     </message>
     <message>
-        <source>Start</source>
-        <translation>Começar</translation>
+        <source>Deactivate</source>
+        <translation>Desativado</translation>
+    </message>
+    <message>
+        <source>Choose an address from the address book</source>
+        <translation>Escolha um endereço da agenda de endereços</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Percentage:</source>
+        <translation>Porcentagem:</translation>
+    </message>
+    <message>
+        <source>Address to send portion of stake to</source>
+        <translation>Endereço para enviar porção de stake</translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation>Endereço:</translation>
+    </message>
+    <message>
+        <source>Delete Address From MultiSend Vector</source>
+        <translation>Deleta endereço do vetor MultiSend</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>Excluir</translation>
     </message>
     <message>
-        <source>Info</source>
-        <translation>Informações</translation>
+        <source>Activate MultiSend</source>
+        <translation>Ativar MultiSend</translation>
     </message>
     <message>
-        <source>Start Masternode</source>
-        <translation>Iniciar Masternode</translation>
+        <source>Activate</source>
+        <translation>Ativar</translation>
     </message>
     <message>
-        <source>Are you sure you want to start masternode %1?
+        <source>View MultiSend Vector</source>
+        <translation>Ver vetor MultiSend</translation>
+    </message>
+    <message>
+        <source>View MultiSend</source>
+        <translation>Ver MultiSend</translation>
+    </message>
+    <message>
+        <source>Send For Stakes</source>
+        <translation>Enviar para Stakes</translation>
+    </message>
+    <message>
+        <source>Send For Masternode Rewards</source>
+        <translation>Enviar para recompensas de Masternode</translation>
+    </message>
+    <message>
+        <source>The entered address:
 </source>
-        <translation>Tem certeza de que deseja iniciar o masternode %1? 
-
+        <translation>O endereço informado:
 </translation>
     </message>
     <message>
-        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
-Please wait few more minutes.</source>
-        <translation>Não é possível iniciar o masternode, a transação colateral não foi aceita pela rede.
-Aguarde mais alguns minutos.</translation>
+        <source> is invalid.
+Please check the address and try again.</source>
+        <translation>é inválido.
+
+Favor verificar o endereço e tente novamente.</translation>
     </message>
     <message>
-        <source>Remote Masternode Data</source>
-        <translation>Dados de Masternode Remoto</translation>
-    </message>
-    <message>
-        <source>You are just about to export the required data to run a Masternode
-on a remote server to your clipboard.
-
-
-You will only have to paste the data in the tradetensor.conf file
-of your remote server and start it, then start the Masternode using
-this controller wallet (select the Masternode in the list and press "start").
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward
 </source>
-        <translation>Você está prestes a exportar os dados necessários para executar um Masternode
-em um servidor remoto para a área de transferência.
-
-
-Você só precisará transferir os dados no arquivo tradetensor.conf
-do servidor remoto e inicie-o, reinicie o Masternode usando
-esta carteira do controlador (selecione o Masternode na lista e pressione "Iniciar").
-
+        <translation>A quantia total de seu vetor MultiSend é superior a 100% da recompensa de seu stake
 </translation>
     </message>
     <message>
-        <source>Masternode exported!, check your clipboard</source>
-        <translation>O Masternode foi exportado!, verifique sua área de trabalho</translation>
+        <source>Please Enter 1 - 100 for percent.</source>
+        <translation>Favor inserir 1 - 100 para porcentagem.</translation>
     </message>
     <message>
-        <source>Delete Masternode</source>
-        <translation>Deletar Masternode</translation>
+        <source>MultiSend Vector
+</source>
+        <translation>Vetor MultiSend
+</translation>
     </message>
     <message>
-        <source>You are just about to delete Masternode:
-%1
-
-Are you sure?</source>
-        <translation>Você está prestes a excluir o Masternode:
-%1
-
-Você tem certeza?</translation>
+        <source>Removed </source>
+        <translation>Removido</translation>
     </message>
     <message>
-        <source>Invalid masternode.conf file</source>
-        <translation>Arquivo masternode.conf inválido</translation>
-    </message>
-    <message>
-        <source>Error parsing masternode.conf file</source>
-        <translation>Erro ao analisar o arquivo masternode.conf</translation>
-    </message>
-    <message>
-        <source>masternode.conf file doesn't exists</source>
-        <translation>O arquivo masternode.conf não existe</translation>
-    </message>
-    <message>
-        <source>Not enough balance to create a masternode, 10,000 TNSR required.</source>
-        <translation>Não há saldo suficiente para criar um masternode, 10.000 TNSR necessários.</translation>
-    </message>
-    <message>
-        <source>Error creating masternode</source>
-        <translation>Erro ao criar masternode</translation>
+        <source>Could not locate address
+</source>
+        <translation>Não foi possível localizar o endereço
+</translation>
     </message>
 </context>
 <context>
-    <name>MnInfoDialog</name>
+    <name>ObfuscationConfig</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>Configure Obfuscation</source>
+        <translation>Configurar Ofuscação</translation>
     </message>
     <message>
-        <source>Public Key:</source>
-        <translation>Chave pública:</translation>
+        <source>Basic Privacy</source>
+        <translation>Privacidade Básica</translation>
     </message>
     <message>
-        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
-        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
+        <source>High Privacy</source>
+        <translation>Alta Privacidade</translation>
     </message>
     <message>
-        <source>Address: </source>
-        <translation>Endereço:</translation>
+        <source>Maximum Privacy</source>
+        <translation>Privacidade Máxima</translation>
     </message>
     <message>
-        <source>127.0.0.2:43223</source>
-        <translation>127.0.0.2:43223</translation>
+        <source>Please select a privacy level.</source>
+        <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Collaterall tx id:</source>
-        <translation>Collaterall tx id:</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TNSR</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 TNSR</translation>
     </message>
     <message>
-        <source>Output index:</source>
-        <translation>Índice de saída:</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TNSR</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 TNSR</translation>
     </message>
     <message>
-        <source>1 Inputs</source>
-        <translation>1 Entradas</translation>
+        <source>Use 16 separate masternodes</source>
+        <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>Status:</source>
-        <translation>Situação:</translation>
+        <source>This option is the quickest and will cost about ~0.025 TNSR to anonymize 10000 TNSR</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 TNSR para anonimizar 10000 TNSR</translation>
     </message>
     <message>
-        <source>MISSING</source>
-        <translation>FALTANDO</translation>
-    </message>
-    </context>
-<context>
-    <name>MyAddressRow</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>This option is moderately fast and will cost about 0.05 TNSR to anonymize 10000 TNSR</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 TNSR para anonimizar 10000 TNSR</translation>
     </message>
     <message>
-        <source>Jan. 19, 2019</source>
-        <translation>19 de janeiro de 2019</translation>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
-        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+        <source>0.1 TNSR per 10000 TNSR you anonymize.</source>
+        <translation>0.1 TNSR por 10000 TNSR que deixar anônima.</translation>
+    </message>
+    <message>
+        <source>Obfuscation Configuration</source>
+        <translation>Configuração de ofuscação</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Tradetensor's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Tradetensor's.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Tradetensor's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Tradetensor's.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Tradetensor's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Tradetensor's.</translation>
     </message>
 </context>
-<context>
-    <name>NavMenuWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1663,16 +1503,8 @@ Você tem certeza?</translation>
         <translation>Abrir requisição de pagamento de URI ou arquivo</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
+        <source>URI:</source>
+        <translation>URI:</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1681,17 +1513,6 @@ Você tem certeza?</translation>
     <message>
         <source>Select payment request file to open</source>
         <translation>Selecione o arquivo de requisição de pagamento para abrir</translation>
-    </message>
-    </context>
-<context>
-    <name>OptionButton</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
     </message>
 </context>
 <context>
@@ -1721,8 +1542,8 @@ Você tem certeza?</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the TradeTensor client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente TradeTensor no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the Tradetensor client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente Tradetensor no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1741,12 +1562,12 @@ Você tem certeza?</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start TradeTensor after logging in to the system.</source>
-        <translation>Iniciar automaticamente TradeTensor depois de logar no sistema.</translation>
+        <source>Automatically start Tradetensor after logging in to the system.</source>
+        <translation>Iniciar automaticamente Tradetensor depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start TradeTensor on system login</source>
-        <translation>&amp;Iniciar TradeTensor ao logar no sistema</translation>
+        <source>&amp;Start Tradetensor on system login</source>
+        <translation>&amp;Iniciar Tradetensor ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1761,8 +1582,8 @@ Você tem certeza?</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TradeTensor.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do TradeTensor.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tradetensor.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do Tradetensor.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1771,8 +1592,8 @@ https://www.transifex.com/tradetensor-project/tradetensor-project-translations</
 https://www.transifex.com/tradetensor-project/tradetensor-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the TradeTensor network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede TradeTensor através de um proxy SOCKS5</translation>
+        <source>Connect to the Tradetensor network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede Tradetensor através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1817,6 +1638,10 @@ https://www.transifex.com/tradetensor-project/tradetensor-project-translations</
     <message>
         <source>User Interface Theme:</source>
         <translation>Usar tema de inferface:</translation>
+    </message>
+    <message>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Unidades para mostrar as quantias:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1874,84 +1699,70 @@ https://www.transifex.com/tradetensor-project/tradetensor-project-translations</
         <source>The supplied proxy address is invalid.</source>
         <translation>O endereço proxy fornecido é inválido.</translation>
     </message>
-    </context>
+</context>
 <context>
-    <name>TradeTensorGUI</name>
+    <name>OverviewPage</name>
     <message>
-        <source>TradeTensor Core</source>
-        <translation>TradeTensor Core</translation>
+        <source>Form</source>
+        <translation>Formulário</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Carteira</translation>
+        <source>Available:</source>
+        <translation>Disponível:</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Nó</translation>
+        <source>Your current spendable balance</source>
+        <translation>Seu saldo disponível</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Mostrar / Esconder</translation>
+        <source>Pending:</source>
+        <translation>Pendente:</translation>
     </message>
     <message>
-        <source>Show or hide the main Window</source>
-        <translation>Mostrar ou esconder a janela principal</translation>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
+        <translation>Total de transações que ainda precisam ser confirmadas e ainda não contam como saldo disponível</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
-        <translation>&amp;Sair</translation>
+        <source>Immature:</source>
+        <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>Quit application</source>
-        <translation>Sair da aplicação</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tradetensor network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Tradetensor após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
-        <source>TradeTensor Core client</source>
-        <translation>Cliente Core TradeTensor</translation>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation>Transações não confirmadas com endereços de apenas-visualização</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Erro</translation>
+        <source>Total:</source>
+        <translation>Total:</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>Aviso</translation>
+        <source>Your current total balance</source>
+        <translation>Seu saldo total atual</translation>
     </message>
     <message>
-        <source>Information</source>
-        <translation>Informação</translation>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Saldo total atual em endereços somente visualização</translation>
     </message>
     <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Enviar transação MultiSend</translation>
+        <source>Watch-only:</source>
+        <translation>Somente visualização:</translation>
     </message>
     <message>
-        <source>Sent transaction</source>
-        <translation>Transação enviada</translation>
+        <source>Spendable:</source>
+        <translation>Disponível:</translation>
     </message>
     <message>
-        <source>Incoming transaction</source>
-        <translation>Transação chegando</translation>
+        <source>Recent transactions</source>
+        <translation>Transações recentes</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Data: %1
-
-Valor: %2
-
-Tipo: %3
-
-Endereço: %4
-</translation>
+        <source>out of sync</source>
+        <translation>fora de sincronia</translation>
     </message>
-    </context>
-<context>
-    <name>PWidget</name>
-    </context>
+</context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -2003,36 +1814,117 @@ Endereço: %4
     </message>
 </context>
 <context>
-    <name>PrivacyWidget</name>
+    <name>PrivacyDialog</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tradetensor network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Tradetensor após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>0</source>
+        <translation>0</translation>
     </message>
     <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
+        <source>Reset</source>
+        <translation>Reinicia</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
+        <source>Quantity:</source>
+        <translation>Quantidade:</translation>
     </message>
     <message>
-        <source>No transactions yet</source>
-        <translation>Nenhuma transação ainda</translation>
+        <source>Amount:</source>
+        <translation>Quantia:</translation>
     </message>
-    </context>
-<context>
-    <name>ProposalFrame</name>
+    <message>
+        <source>Pay &amp;To:</source>
+        <translation>Pagar &amp;Para:</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Escolha o endereço previamente utilizado</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Cole o endereço da área de transferência</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Rótulo:</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Coloque uma etiqueta neste endereço para adicioná-lo à lista de endereços utilizados</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>Quantia:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioridade:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Taxa:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>não</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Fundos insuficientes!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>médio</translation>
+    </message>
+    <message>
+        <source>Coin Control Features</source>
+        <translation>Funções do Controle de Moedas</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Troco:</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>fora de sincronia</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copiar quantidade</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copiar quantia</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Confirmar envio de moedas</translation>
+    </message>
     </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Quantidade</translation>
+    </message>
+    <message>
+        <source>Enter a Tradetensor address (e.g. %1)</source>
+        <translation>Insira um endereço Tradetensor (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2070,11 +1962,26 @@ Endereço: %4
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
+</context>
+<context>
+    <name>QRImageWidget</name>
     <message>
-        <source>TradeTensor Core</source>
-        <translation>TradeTensor Core</translation>
+        <source>&amp;Save Image...</source>
+        <translation>&amp;Salvar imagem...</translation>
     </message>
-    </context>
+    <message>
+        <source>&amp;Copy Image</source>
+        <translation>&amp;Copiar imagem</translation>
+    </message>
+    <message>
+        <source>Save QR Code</source>
+        <translation>Salvar código QR</translation>
+    </message>
+    <message>
+        <source>PNG Image (*.png)</source>
+        <translation>Imagem PNG (*.png)</translation>
+    </message>
+</context>
 <context>
     <name>RPCConsole</name>
     <message>
@@ -2116,6 +2023,10 @@ Endereço: %4
     <message>
         <source>Last block time</source>
         <translation>tempo do último bloco</translation>
+    </message>
+    <message>
+        <source>Using OpenSSL version</source>
+        <translation>Usando versão OpenSSL</translation>
     </message>
     <message>
         <source>Build date</source>
@@ -2190,6 +2101,14 @@ Endereço: %4
         <translation>Serviços</translation>
     </message>
     <message>
+        <source>Starting Height</source>
+        <translation>Altura de início</translation>
+    </message>
+    <message>
+        <source>Sync Height</source>
+        <translation>Altura da sincronização</translation>
+    </message>
+    <message>
         <source>Connection Time</source>
         <translation>Tempo de conexão</translation>
     </message>
@@ -2218,18 +2137,6 @@ Endereço: %4
         <translation>&amp;Reparo da Carteira</translation>
     </message>
     <message>
-        <source>Delete local Blockchain Folders</source>
-        <translation>Excluir pastas locais Blockchain</translation>
-    </message>
-    <message>
-        <source>Wallet In Use:</source>
-        <translation>Carteiro em uso:</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
-        <translation>Tentar recuperar chaves privadas de um wallet.dat corrompido.</translation>
-    </message>
-    <message>
         <source>Rescan blockchain files</source>
         <translation>Reescanear os arquivos da blockchain</translation>
     </message>
@@ -2244,10 +2151,6 @@ Endereço: %4
     <message>
         <source>Upgrade wallet format</source>
         <translation>Atualizar formato da carteira</translation>
-    </message>
-    <message>
-        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
-        <translation>Deleta todos os arquivos locais da blockchain para que a carteira sincronize do zero.</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
@@ -2270,12 +2173,12 @@ Endereço: %4
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the TradeTensor RPC console.</source>
-        <translation>Bem-vindo ao console da TradeTensor RPC</translation>
+        <source>Welcome to the Tradetensor RPC console.</source>
+        <translation>Bem-vindo ao console da Tradetensor RPC</translation>
     </message>
     <message>
-        <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Você deseja continuar?.&lt;br /&gt;</translation>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Utilize as teclas para cima ou baixo para navegar no histórico e &lt;b&gt;Ctrl-L&lt;/b&gt; para limpar a tela.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2309,45 +2212,125 @@ Endereço: %4
         <source>Unknown</source>
         <translation>Desconhecido</translation>
     </message>
-</context>
-<context>
-    <name>ReceiveDialog</name>
     <message>
-        <source>Dialog</source>
-        <translation>Diálogo</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
-    </message>
-    <message>
-        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
-        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
+        <source>Fetching...</source>
+        <translation>buscando...</translation>
     </message>
 </context>
 <context>
-    <name>ReceiveWidget</name>
+    <name>ReceiveCoinsDialog</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>&amp;Message:</source>
+        <translation>&amp;Mensagem:</translation>
     </message>
     <message>
-        <source>TextLabel</source>
+        <source>An optional label to associate with the new receiving address.</source>
+        <translation>Um rótulo opcional para associar a novos endereços de recebimento.</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Rótulo:</translation>
+    </message>
+    <message>
+        <source>&amp;Amount:</source>
+        <translation>&amp;Quantidade:</translation>
+    </message>
+    <message>
+        <source>&amp;Request payment</source>
+        <translation>&amp;Requisitar pagamento</translation>
+    </message>
+    <message>
+        <source>Clear all fields of the form.</source>
+        <translation>Limpa todos os campos do formulário.</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Limpar</translation>
+    </message>
+    <message>
+        <source>Requested payments history</source>
+        <translation>Histórico de pagamentos requisitados</translation>
+    </message>
+    <message>
+        <source>Show the selected request (does the same as double clicking an entry)</source>
+        <translation>Mostra as requisições selecionadas (faz o mesmo que dois clicas em uma entrada)</translation>
+    </message>
+    <message>
+        <source>Show</source>
+        <translation>Mostrar</translation>
+    </message>
+    <message>
+        <source>Remove the selected entries from the list</source>
+        <translation>Remove as entradas selecionadas da lista</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Remover</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Copiar rótulo</translation>
+    </message>
+    <message>
+        <source>Copy message</source>
+        <translation>Copiar mensagem</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copiar quantia</translation>
+    </message>
+</context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <source>QR Code</source>
+        <translation>Código QR</translation>
+    </message>
+    <message>
+        <source>Copy &amp;URI</source>
+        <translation>Copiar &amp;URI</translation>
+    </message>
+    <message>
+        <source>&amp;Save Image...</source>
+        <translation>&amp;Salvar imagem...</translation>
+    </message>
+    <message>
+        <source>Request payment to %1</source>
+        <translation>Requisitar pagamento a %1</translation>
+    </message>
+    <message>
+        <source>Payment information</source>
+        <translation>Informação do pagamento</translation>
+    </message>
+    <message>
+        <source>URI</source>
+        <translation>URI</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Endereço</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Quantidade</translation>
+    </message>
+    <message>
+        <source>Label</source>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>Address copied</source>
-        <translation>Endereço copiado</translation>
+        <source>Message</source>
+        <translation>Mensagem</translation>
     </message>
-    </context>
+    <message>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>URI resultante muito longa, tente reduzir o texto ou rótulo / mensagem.</translation>
+    </message>
+    <message>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Erro ao codificar URI para dentro do QR Code.</translation>
+    </message>
+</context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -2361,10 +2344,6 @@ Endereço: %4
     <message>
         <source>Message</source>
         <translation>Mensagem</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Endereço</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2384,416 +2363,447 @@ Endereço: %4
     </message>
 </context>
 <context>
-    <name>RequestDialog</name>
+    <name>SendCoinsDialog</name>
     <message>
-        <source>Dialog</source>
-        <translation>Diálogo</translation>
+        <source>Send Coins</source>
+        <translation>Enviar Moedas</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Quantidade</translation>
+        <source>Coin Control Features</source>
+        <translation>Funções do Controle de Moedas</translation>
     </message>
     <message>
-        <source>TNSR</source>
-        <translation>TNSR</translation>
+        <source>Insufficient funds!</source>
+        <translation>Fundos insuficientes!</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>Quantity:</source>
+        <translation>Quantidade:</translation>
     </message>
     <message>
-        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
-        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
     </message>
     <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
+        <source>Amount:</source>
+        <translation>Quantia:</translation>
     </message>
     <message>
-        <source>Label</source>
-        <translation>Rótulo</translation>
+        <source>Priority:</source>
+        <translation>Prioridade:</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Erro</translation>
-    </message>
-    </context>
-<context>
-    <name>SendChangeAddressDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation>Diálogo</translation>
+        <source>medium</source>
+        <translation>médio</translation>
     </message>
     <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
+        <source>Fee:</source>
+        <translation>Taxa:</translation>
     </message>
     <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
+        <source>no</source>
+        <translation>não</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>Ok</translation>
-    </message>
-    </context>
-<context>
-    <name>SendCustomFeeDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>After Fee:</source>
+        <translation>Após taxas:</translation>
     </message>
     <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
+        <source>Change:</source>
+        <translation>Troco:</translation>
     </message>
     <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
+        <source>Split UTXO</source>
+        <translation>Dividir UTXO</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>Ok</translation>
+        <source># of outputs</source>
+        <translation># de outputs</translation>
     </message>
     <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
+        <source>UTXO Size:</source>
+        <translation>Tamanho UTXO:</translation>
+    </message>
+    <message>
+        <source>0 TNSR</source>
+        <translation>0 TNSR</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation>Taxa de transação:</translation>
+    </message>
+    <message>
+        <source>Choose...</source>
+        <translation>Escolha...</translation>
+    </message>
+    <message>
+        <source>collapse fee-settings</source>
+        <translation>colapsar configurações de taxa</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Minimizar</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation>por kilobyte</translation>
+    </message>
+    <message>
+        <source>total at least</source>
+        <translation>total pelo menos</translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Padrão:</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
+        <translation>(Smart fee não inicializada ainda. Isso geralmente leva alguns blocos...)</translation>
+    </message>
+    <message>
+        <source>Confirmation time:</source>
+        <translation>Tempo de confirmação:</translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uRUPs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uRUPs em taxa,&lt;br /&gt; pagará pelo menos 1000 uRUPs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+    </message>
+    <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Tradetensor transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de Tradetensor do que a rede pode processar.</translation>
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>normal</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>rápido</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>Recomendado</translation>
+    </message>
+    <message>
+        <source>Send as zero-fee transaction if possible</source>
+        <translation>Enviar como uma transação com taxa zero se possível</translation>
+    </message>
+    <message>
+        <source>(confirmation may take longer)</source>
+        <translation>(confirmação pode demorar mais)</translation>
+    </message>
+    <message>
+        <source>Confirm the send action</source>
+        <translation>Confirma a ação de envio</translation>
+    </message>
+    <message>
+        <source>Clear all fields of the form.</source>
+        <translation>Limpa todos os campos do formulário.</translation>
+    </message>
+    <message>
+        <source>Clear &amp;All</source>
+        <translation>Limpar &amp;Tudo</translation>
+    </message>
+    <message>
+        <source>Send to multiple recipients at once</source>
+        <translation>Envia para diversos recipientes de uma vez</translation>
+    </message>
+    <message>
+        <source>Add &amp;Recipient</source>
+        <translation>Adicionar &amp;Recipiente</translation>
+    </message>
+    <message>
+        <source>SwiftTX</source>
+        <translation>SwiftTX</translation>
+    </message>
+    <message>
+        <source>Balance:</source>
+        <translation>Saldo:</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copiar quantidade</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copiar quantia</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Copiar taxa</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Copiar depois das taxas</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Copiar bytes</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>Copiar prioridade</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Copiar troco</translation>
+    </message>
+    <message>
+        <source>using</source>
+        <translation>usando</translation>
+    </message>
+    <message>
+        <source>anonymous funds</source>
+        <translation>fundos anônimos</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid Tradetensor address</source>
+        <translation>Aviso: endereço Tradetensor inválido</translation>
+    </message>
+    <message>
+        <source>any available funds (not recommended)</source>
+        <translation>quaisquer fundos disponíveis (não recomendado)</translation>
+    </message>
+    <message>
+        <source>and SwiftTX</source>
+        <translation>e SwiftTX</translation>
+    </message>
+    <message>
+        <source>%1 to %2</source>
+        <translation>%1 a %2</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send?</source>
+        <translation>Você tem certeza que deseja enviar?</translation>
+    </message>
+    <message>
+        <source>are added as transaction fee</source>
+        <translation>foi adicionado como taxa de transação</translation>
+    </message>
+    <message>
+        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
+        <translation>Quantia total =  &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Confirmar envio de moedas</translation>
+    </message>
+    <message>
+        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
+        <translation>Uma taxa %1 vezes maior que %2 por kB é considerada extremamente alta.</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation>O endereço de recebimento não é válido, favor conferir novamente.</translation>
+    </message>
+    <message>
+        <source> split into %1 outputs using the UTXO splitter.</source>
+        <translation>divida em %1 outputs utilizando o divisor de UTXO.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
+        <translation>&lt;b&gt;(%1 de %2 entradas mostradas)&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>A quantia a ser paga deve ser maior que 0.</translation>
+    </message>
+    <message>
+        <source>The amount exceeds your balance.</source>
+        <translation>A quantia excede o seu saldo.</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>O total excede seu saldo quando a taxa de %1 transação é incluída.</translation>
+    </message>
+    <message>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>Endereço duplicado encontrado, somente possível enviar uma vez a cada endereço por operação.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>Criação da transação falhou!</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Erro: A carteira foi destravada apenas para anonimizar moedas.</translation>
+    </message>
+    <message>
+        <source>Pay only the minimum fee of %1</source>
+        <translation>Pague somente a taxa mínima de %1</translation>
+    </message>
+    <message>
+        <source>Warning: Unknown change address</source>
+        <translation>Aviso: mudança de endereço desconhecida</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sem rótulo)</translation>
     </message>
 </context>
 <context>
-    <name>SendMultiRow</name>
+    <name>SendCoinsEntry</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>This is a normal payment.</source>
+        <translation>Esse é um pagamento normal.</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>Pay &amp;To:</source>
+        <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Insira o endereço</translation>
-    </message>
-    </context>
-<context>
-    <name>SendWidget</name>
-    <message>
-        <source>Send</source>
-        <translation>Enviar </translation>
+        <source>The Tradetensor address to send the payment to</source>
+        <translation>O endereço Tradetensor para enviar o pagamento</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Quantidade</translation>
+        <source>Choose previously used address</source>
+        <translation>Escolha o endereço previamente utilizado</translation>
     </message>
     <message>
-        <source>Cannot store your own address as contact</source>
-        <translation>Não é possível armazenar seu próprio endereço como contato</translation>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
     </message>
     <message>
-        <source>New Contact Stored</source>
-        <translation>Novo contato armazenado</translation>
+        <source>Paste address from clipboard</source>
+        <translation>Cole o endereço da área de transferência</translation>
     </message>
     <message>
-        <source>Error Storing Contact</source>
-        <translation>Erro ao armazenar o contato</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsBackupWallet</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>Remove this entry</source>
+        <translation>Remova esta entrada</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation>Carteira de backup</translation>
+        <source>&amp;Label:</source>
+        <translation>&amp;Rótulo:</translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (.dat)</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsBitToolWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Coloque uma etiqueta neste endereço para adicioná-lo à lista de endereços utilizados</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>A&amp;mount:</source>
+        <translation>Quantia:</translation>
     </message>
     <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
+        <source>Message:</source>
+        <translation>Mensagem:</translation>
     </message>
     <message>
-        <source>Import Address</source>
-        <translation>Importar endereço</translation>
+        <source>This is an unverified payment request.</source>
+        <translation>Este é um pedido não verificado de pagamento.</translation>
     </message>
     <message>
-        <source>Clear</source>
-        <translation>Limpar</translation>
+        <source>Pay To:</source>
+        <translation>Pagar para:</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Insira o endereço</translation>
+        <source>Memo:</source>
+        <translation>Memorando:</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Insira palavra-chave</translation>
+        <source>This is a verified payment request.</source>
+        <translation>Esta é uma requisição de pagamento verificada.</translation>
     </message>
     <message>
-        <source>ENCRYPT</source>
-        <translation>CRIPTOGRAFAR </translation>
-    </message>
-    <message>
-        <source>The entered passphrase is invalid. </source>
-        <translation>A senha informada é inválida.</translation>
-    </message>
-    <message>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Permitido: 0-9,a-z,A-Z.</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>O endereço informado é inválido.</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Favor verificar o endereço e tente novamente.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>O endereço inserido não se refere a uma chave.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Desbloqueio da carteira foi cancelado.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>A chave privada para o endereço fornecido não está disponível.</translation>
-    </message>
-    <message>
-        <source>Failed to decrypt.</source>
-        <translation>Falhou ao desencriptar.</translation>
-    </message>
-    <message>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation>Favor verificar a chave e a palavra-chave e tentar novamente.</translation>
-    </message>
-    <message>
-        <source>Data Not Valid.</source>
-        <translation>Informação não é válida.</translation>
-    </message>
-    <message>
-        <source>Please try again.</source>
-        <translation>Favor tentar novamente.</translation>
-    </message>
-    <message>
-        <source>Please wait while key is imported</source>
-        <translation>Favor aguardar enquanto a chave é importada</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsConsoleWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Welcome to the TradeTensor RPC console.</source>
-        <translation>Bem-vindo ao console da TradeTensor RPC</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsDisplayOptionsWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Decimal digits</source>
-        <translation>Dígitos decimais</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
-    </message>
-    <message>
-        <source>default</source>
-        <translation>padrão</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsFaqWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation>1</translation>
-    </message>
-    <message>
-        <source>2</source>
-        <translation>2</translation>
-    </message>
-    <message>
-        <source>3</source>
-        <translation>3</translation>
-    </message>
-    <message>
-        <source>5</source>
-        <translation>5</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation>10</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsInformationWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informação</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation>Geral</translation>
-    </message>
-    <message>
-        <source>Network</source>
-        <translation>Rede</translation>
-    </message>
-    <message>
-        <source>In:</source>
-        <translation>entrada:</translation>
-    </message>
-    <message>
-        <source>Out:</source>
-        <translation>saída:</translation>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Coloque uma etiqueta neste endereço para adicioná-lo à lista de contatos</translation>
     </message>
 </context>
 <context>
-    <name>SettingsMainOptionsWidget</name>
+    <name>ShutdownWindow</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>Tradetensor Core is shutting down...</source>
+        <translation>Tradetensor Core está desligando...</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Não desligue o seu computador até que esta janela desapareça</translation>
     </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>CheckBox</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
-    </message>
-    </context>
+</context>
 <context>
-    <name>SettingsMultisendDialog</name>
+    <name>SignVerifyMessageDialog</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>Signatures - Sign / Verify a Message</source>
+        <translation>Assinaturas - Assinar / Verificar uma Mensagem</translation>
     </message>
     <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
+        <source>&amp;Sign Message</source>
+        <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>The Tradetensor address to sign the message with</source>
+        <translation>O endereço Tradetensor para assinar a mensagem</translation>
     </message>
     <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
+        <source>Choose previously used address</source>
+        <translation>Escolha o endereço previamente utilizado</translation>
     </message>
     <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
     </message>
     <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
+        <source>Paste address from clipboard</source>
+        <translation>Cole o endereço da área de transferência</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
     </message>
     <message>
-        <source>CheckBox</source>
-        <translation>CheckBox</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Ativo</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsSignMessageWidgets</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>Limpar</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Mensagem</translation>
-    </message>
-    <message>
-        <source>Enter address</source>
-        <translation>Insira o endereço</translation>
+        <source>Enter the message you want to sign here</source>
+        <translation>Insira a mensagem que deseja ser assinada aqui</translation>
     </message>
     <message>
         <source>Signature</source>
         <translation>Assinatura</translation>
+    </message>
+    <message>
+        <source>Copy the current signature to the system clipboard</source>
+        <translation>Copia a assinatura atual do sistema de transferência</translation>
+    </message>
+    <message>
+        <source>Sign the message to prove you own this Tradetensor address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço Tradetensor</translation>
+    </message>
+    <message>
+        <source>The Tradetensor address the message was signed with</source>
+        <translation>O endereço Tradetensor que assinou a mensagem</translation>
+    </message>
+    <message>
+        <source>Verify the message to ensure it was signed with the specified Tradetensor address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Tradetensor especificado.</translation>
+    </message>
+    <message>
+        <source>Sign &amp;Message</source>
+        <translation>Você pode assinar mensagens com os seus endereços para provar que você os possui. Cuidado ao assinar mensagens vagas, pois há ataques de phishing que podem tentar te manipular a assinar a sua identidade para eles. Assine apenas mensagens que você esteja ciente e concorde com o conteúdo.</translation>
+    </message>
+    <message>
+        <source>Reset all sign message fields</source>
+        <translation>Reiniciar todos os campos de mensagem</translation>
+    </message>
+    <message>
+        <source>Clear &amp;All</source>
+        <translation>Limpar &amp;Tudo</translation>
+    </message>
+    <message>
+        <source>&amp;Verify Message</source>
+        <translation>&amp;Verificar mensagem</translation>
+    </message>
+    <message>
+        <source>Verify &amp;Message</source>
+        <translation>Verificar &amp;Mensagem</translation>
+    </message>
+    <message>
+        <source>Reset all verify message fields</source>
+        <translation>Reiniciar todos os campos de mensagem</translation>
+    </message>
+    <message>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Clique em "Assinar Mensagem" para gerar a assinatura</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2843,146 +2853,12 @@ Endereço: %4
         <source>Message verified.</source>
         <translation>Mensagem verificada.</translation>
     </message>
-    </context>
-<context>
-    <name>SettingsWalletOptionsWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>CheckBox</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Carteira</translation>
-    </message>
-    <message>
-        <source>Network</source>
-        <translation>Rede</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Aceitar conexões chegando</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVAR</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsWalletRepairWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
-        <translation>Tentar recuperar chaves privadas de um wallet.dat corrompido.</translation>
-    </message>
-    <message>
-        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
-        <translation>Deleta todos os arquivos locais da blockchain para que a carteira sincronize do zero.</translation>
-    </message>
-    <message>
-        <source>Recover transactions 1</source>
-        <translation>Recuperar transações 1</translation>
-    </message>
-    <message>
-        <source>Recover transactions 2</source>
-        <translation>Recuperar transações 2</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet format</source>
-        <translation>Atualizar formato da carteira</translation>
-    </message>
-    <message>
-        <source>Rebuild index</source>
-        <translation>Reconstruir índice</translation>
-    </message>
-    <message>
-        <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Você deseja continuar?.&lt;br /&gt;</translation>
-    </message>
-    </context>
-<context>
-    <name>SettingsWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Carteira</translation>
-    </message>
-    <message>
-        <source>Options</source>
-        <translation>Opções</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informação</translation>
-    </message>
-    <message>
-        <source>Confirm options reset</source>
-        <translation>Confirma reinício das opções</translation>
-    </message>
-    <message>
-        <source>Client restart required to activate changes.</source>
-        <translation>É necessário reiniciar o cliente para ativar as mudanças.</translation>
-    </message>
-    <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>O cliente será desligado, deseja continuar?</translation>
-    </message>
-    </context>
-<context>
-    <name>ShutdownWindow</name>
-    <message>
-        <source>TradeTensor Core is shutting down...</source>
-        <translation>TradeTensor Core está desligando...</translation>
-    </message>
-    <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Não desligue o seu computador até que esta janela desapareça</translation>
-    </message>
-</context>
-<context>
-    <name>SnackBar</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    </context>
-<context>
-    <name>Splash</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>TradeTensor Core</source>
-        <translation>TradeTensor Core</translation>
-    </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TradeTensor Core</source>
-        <translation>TradeTensor Core</translation>
+        <source>Tradetensor Core</source>
+        <translation>Tradetensor Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2997,36 +2873,14 @@ Endereço: %4
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The TradeTensor Core developers</source>
-        <translation>Os desenvolvedores do TradeTensor Core</translation>
+        <source>The Tradetensor Core developers</source>
+        <translation>Os desenvolvedores do Tradetensor Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
 </context>
-<context>
-    <name>TooltipMenu</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Excluir</translation>
-    </message>
-    </context>
-<context>
-    <name>TopBar</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 e %2</translation>
-    </message>
-    </context>
 <context>
     <name>TrafficGraphWidget</name>
     <message>
@@ -3045,6 +2899,18 @@ Endereço: %4
         <translation>conflitou</translation>
     </message>
     <message>
+        <source>%1/offline (verified via swifttx)</source>
+        <translation>%1/offline (verificado via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (verified via swifttx)</source>
+        <translation>%1/confirmado (verificado via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (verified via swifttx)</source>
+        <translation>%1 confirmações (verificado via swifttx)</translation>
+    </message>
+    <message>
         <source>%1/offline</source>
         <translation>%1/offline</translation>
     </message>
@@ -3057,36 +2923,24 @@ Endereço: %4
         <translation>%1 confirmações</translation>
     </message>
     <message>
-        <source>%1/offline (verified via SwiftX)</source>
-        <translation>%1/offline (verificado via SwiftX)</translation>
+        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (verificação SwiftTX em progresso - %2 de %3 assinaturas)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via SwiftX)</source>
-        <translation>%1/confirmado (verificado via SwiftX)</translation>
+        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/confirmado (verificação SwiftTX em progresso - %2 de %3 assinaturas)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via SwiftX)</source>
-        <translation>%1 confirmações (verificado via SwiftX)</translation>
+        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 confirmações (verificação SwiftTX em progresso - %2 de %3 assinaturas)</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (verificação SwiftX  em progresso - %2 de %3 assinaturas)</translation>
+        <source>%1/offline (SwiftTX verification failed)</source>
+        <translation>%1/offline (verificação SwiftTX falhou)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmado (verificação SwiftX  em progresso - %2 de %3 assinaturas )</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmações ( verificação SwiftX  em progresso - %2 de %3 assinaturas)</translation>
-    </message>
-    <message>
-        <source>%1/offline (SwiftX verification failed)</source>
-        <translation>%1/offline ( verificação SwiftX falhou)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftX verification failed)</source>
-        <translation>%1/confirmado (verificação SwiftX falhou)</translation>
+        <source>%1/confirmed (SwiftTX verification failed)</source>
+        <translation>%1/confirmado (verificação SwiftTX falhou)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3181,10 +3035,6 @@ Endereço: %4
         <translation>Vendedor</translation>
     </message>
     <message>
-        <source>Debug information</source>
-        <translation>Informação de depuração</translation>
-    </message>
-    <message>
         <source>Transaction</source>
         <translation>Transação</translation>
     </message>
@@ -3205,6 +3055,13 @@ Endereço: %4
         <translation>falso</translation>
     </message>
 </context>
+<context>
+    <name>TransactionDescDialog</name>
+    <message>
+        <source>Transaction details</source>
+        <translation>Detalhes da transação</translation>
+    </message>
+    </context>
 <context>
     <name>TransactionTableModel</name>
     <message>
@@ -3272,12 +3129,12 @@ Endereço: %4
         <translation>Enviado para</translation>
     </message>
     <message>
-        <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
-        <translation>Bloco órfão - Gerado, porém não aceito. Isto não impacta seus fundos.</translation>
-    </message>
-    <message>
         <source>Payment to yourself</source>
         <translation>Pagamento para si mesmo</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Cunhado</translation>
     </message>
     <message>
         <source>Mined</source>
@@ -3321,140 +3178,244 @@ Endereço: %4
     </message>
 </context>
 <context>
-    <name>TxDetailDialog</name>
+    <name>TransactionView</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>All</source>
+        <translation>Tudo</translation>
     </message>
     <message>
-        <source>Transaction Details</source>
-        <translation>Detalhes da transação</translation>
+        <source>Today</source>
+        <translation>Hoje</translation>
     </message>
     <message>
-        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
-        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
+        <source>This week</source>
+        <translation>Essa semana</translation>
     </message>
     <message>
-        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
-        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
+        <source>This month</source>
+        <translation>Esse mês</translation>
     </message>
     <message>
-        <source>1 Inputs</source>
-        <translation>1 Entradas</translation>
+        <source>Last month</source>
+        <translation>Último mês</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Taxa:</translation>
+        <source>This year</source>
+        <translation>Esse ano</translation>
     </message>
     <message>
-        <source>Status:</source>
-        <translation>Situação:</translation>
+        <source>Range...</source>
+        <translation>Alcance...</translation>
     </message>
     <message>
-        <source>TextLabel</source>
+        <source>Most Common</source>
+        <translation>Mais comum</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Recebido com</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Enviado para</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>Ofuscado</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Para si mesmo</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Minerado</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Cunhado</translation>
+    </message>
+    <message>
+        <source>Masternode Reward</source>
+        <translation>Recompensa de Masternode</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Outro</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>Insira um endereço ou rótulo para pesquisar</translation>
+    </message>
+    <message>
+        <source>Min amount</source>
+        <translation>Quantia mínima</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copiar endereço</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Copiar rótulo</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copiar quantia</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Copiar ID da transação</translation>
+    </message>
+    <message>
+        <source>Edit label</source>
+        <translation>Alterar rótulo</translation>
+    </message>
+    <message>
+        <source>Show transaction details</source>
+        <translation>Mostrar detalhes da transação</translation>
+    </message>
+    <message>
+        <source>Export Transaction History</source>
+        <translation>Exportar histórico de transações</translation>
+    </message>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Comma separated file (*.csv)</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>Confirmado</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation>Somente observação</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
+    </message>
+    <message>
+        <source>Label</source>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
+        <source>Address</source>
+        <translation>Endereço</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>Ok</translation>
+        <source>ID</source>
+        <translation>ID</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>Desconhecido</translation>
+        <source>Exporting Failed</source>
+        <translation>Exportação falhou</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the transaction history to %1.</source>
+        <translation>Aconteceu um erro na tentativa de salvar o histórico de transação para %1.</translation>
+    </message>
+    <message>
+        <source>Exporting Successful</source>
+        <translation>Exportado com sucesso</translation>
+    </message>
+    <message>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation>O histórico de transação foi salvo em %1 com sucesso.</translation>
+    </message>
+    <message>
+        <source>Range:</source>
+        <translation>Alcance:</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>para</translation>
     </message>
 </context>
 <context>
-    <name>TxRow</name>
+    <name>UnitDisplayStatusBarControl</name>
     <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
+        <source>Unit to show amounts in. Click to select another unit.</source>
+        <translation>Unidade para mostrar as quantias. Clique para selecionar outra unidade.</translation>
     </message>
-    </context>
+</context>
+<context>
+    <name>WalletFrame</name>
+    <message>
+        <source>No wallet has been loaded.</source>
+        <translation>Nenhuma carteira foi carregada.</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
         <translation>Enviar Moedas</translation>
     </message>
-    </context>
-<context>
-    <name>WalletPasswordDialog</name>
     <message>
-        <source>Dialog</source>
-        <translation>Diálogo</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Cancelar </translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Ok</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 TNSR.</source>
+        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 TNSR.</translation>
     </message>
 </context>
 <context>
-    <name>WelcomeContentWidget</name>
+    <name>WalletView</name>
     <message>
-        <source>1</source>
-        <translation>1</translation>
+        <source>&amp;Export</source>
+        <translation>&amp;Exportar</translation>
     </message>
     <message>
-        <source>2</source>
-        <translation>2</translation>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Exportar as informações da aba atual para um arquivo</translation>
     </message>
     <message>
-        <source>3</source>
-        <translation>3</translation>
+        <source>Selected amount:</source>
+        <translation>Quantidade selecionada:</translation>
     </message>
     <message>
-        <source>Welcome</source>
-        <translation>Bem-vindo</translation>
+        <source>Backup Wallet</source>
+        <translation>Carteira de backup</translation>
     </message>
     <message>
-        <source>Masternodes</source>
-        <translation>Masternodes</translation>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Wallet Data (.dat)</translation>
     </message>
     <message>
-        <source>default</source>
-        <translation>padrão</translation>
+        <source>Backup Failed</source>
+        <translation>Backup falhou</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the wallet data to %1.</source>
+        <translation>Aconteceu um erro na tentativa de salvar os dados da carteira em %1.</translation>
+    </message>
+    <message>
+        <source>Backup Successful</source>
+        <translation>Backup com sucesso</translation>
+    </message>
+    <message>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation>Os dados da carteira foram salvos em %1 com sucesso.</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
-    <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
-    </message>
-    <message>
-        <source>zPiv</source>
-        <translation>zTNSR</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Quantidade:</translation>
-    </message>
+    <name>ZPhrControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
-    <message>
-        <source>Select/Deselect All</source>
-        <translation>Selecionar/Deselecionar todos</translation>
-    </message>
     </context>
 <context>
-    <name>tradetensor-core</name>
+    <name>tradetensor-network-v2</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
+    </message>
+    <message>
+        <source>Disable all Tradetensor specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionalidades específicas Tradetensor (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3493,6 +3454,10 @@ Endereço: %4
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
+        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX requer inputs com pelo menos 6 confirmações, você precisar aguardar alguns minutos e tentar novamente.</translation>
+    </message>
+    <message>
         <source>Unable to locate enough funds for this transaction that are not equal 10000 TNSR.</source>
         <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 TNSR.</translation>
     </message>
@@ -3509,8 +3474,8 @@ Endereço: %4
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong TradeTensor Core will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core TradeTensor não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Tradetensor Core will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core Tradetensor não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3525,8 +3490,8 @@ Endereço: %4
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(30145 could be used only on mainnet)</source>
-        <translation>(30145 could be used only on mainnet)</translation>
+        <source>(3310 could be used only on mainnet)</source>
+        <translation>(3310 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3537,8 +3502,8 @@ Endereço: %4
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 30145 for mainnet)</source>
-        <translation>(deve ser 30145 para mainnet)</translation>
+        <source>(must be 3310 for mainnet)</source>
+        <translation>(deve ser 3310 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
@@ -3549,8 +3514,20 @@ Endereço: %4
         <translation>Adicionar um nó para conectar e tentar manter uma conexão aberta</translation>
     </message>
     <message>
+        <source>Already have that input.</source>
+        <translation>Já possui este input.</translation>
+    </message>
+    <message>
         <source>Block creation options:</source>
         <translation>Opções de criação de bloco:</translation>
+    </message>
+    <message>
+        <source>Can't find random Masternode.</source>
+        <translation>Não conseguiu encontrar um Masternode aleatório.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>Não é possível embaralhar enquanto a sincronia estiver em progresso.</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -3577,20 +3554,12 @@ Endereço: %4
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The TradeTensor Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do TradeTensor Core</translation>
+        <source>Copyright (C) 2015-%i The Tradetensor Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Tradetensor Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>database de blocos corrompida</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Opções de depuração/teste:</translation>
-    </message>
-    <message>
-        <source>Disable OS notifications for incoming transactions (default: %u)</source>
-        <translation>Desabilitar notificações OS para transações chegando (padrão: %u)</translation>
     </message>
     <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
@@ -3607,6 +3576,14 @@ Endereço: %4
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation>Permite ao cliente atuar como um masternode (0-1, padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Entries are full.</source>
+        <translation>As entradas estão cheias.</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Erro ao conectar ao Masternode.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -3629,8 +3606,8 @@ Endereço: %4
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of TradeTensor Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da TradeTensor Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Tradetensor Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Tradetensor Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3639,6 +3616,10 @@ Endereço: %4
     <message>
         <source>Error reading from database, shutting down.</source>
         <translation>Erro na leitura da base de datos, desligando.</translation>
+    </message>
+    <message>
+        <source>Error recovering public key.</source>
+        <translation>Erro na recuperação da chave pública.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3657,8 +3638,8 @@ Endereço: %4
         <translation>erro: Carteira travada, não foi possível criar a transação!</translation>
     </message>
     <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Falhou em escutar qualquer porta. Use -listen=0 se você quiser isso.</translation>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation>Erro: Você já possui entradas pendentes na pool de Ofuscação</translation>
     </message>
     <message>
         <source>Failed to read block</source>
@@ -3669,8 +3650,20 @@ Endereço: %4
         <translation>Taxa (em TNSR/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
+        <source>Finalizing transaction.</source>
+        <translation>Encerrando a transação.</translation>
+    </message>
+    <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Forçar modo seguro (padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ( waiting %s )</source>
+        <translation>Encontrou usuários suficientes, autenticando (aguardando %s)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ...</source>
+        <translation>Encontrou usuários suficientes, autenticando...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -3685,6 +3678,14 @@ Endereço: %4
         <translation>Importando...</translation>
     </message>
     <message>
+        <source>Incompatible mode.</source>
+        <translation>Modo incompatível.</translation>
+    </message>
+    <message>
+        <source>Incompatible version.</source>
+        <translation>Versão incompatível.</translation>
+    </message>
+    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Incorreto ou bloco gênesis não encontrado. O datadir de rede estaria errado?</translation>
     </message>
@@ -3693,8 +3694,8 @@ Endereço: %4
         <translation>Informação</translation>
     </message>
     <message>
-        <source>Insufficient funds</source>
-        <translation>Fundos insuficientes</translation>
+        <source>Input is not valid.</source>
+        <translation>O input não é válido.</translation>
     </message>
     <message>
         <source>Insufficient funds.</source>
@@ -3725,10 +3726,6 @@ Endereço: %4
         <translation>Quantia inválida para -reservebalance=&lt;quantidade&gt;</translation>
     </message>
     <message>
-        <source>Invalid amount</source>
-        <translation>quantia inválida</translation>
-    </message>
-    <message>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
         <translation>masternodeprivkey inválido. Favor conferir o manual.</translation>
     </message>
@@ -3741,18 +3738,20 @@ Endereço: %4
         <translation>Porta inválida detectada em masternode.conf</translation>
     </message>
     <message>
-        <source>SwiftX options:</source>
-        <translation>opções SwiftX:</translation>
+        <source>Invalid private key.</source>
+        <translation>Chave privada inválida.</translation>
     </message>
     <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>transações não confirmadas removidas
-</translation>
+        <source>Invalid script detected.</source>
+        <translation>Script inválido detectado.</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; pode ser:</translation>
+        <source>Last Obfuscation was too recent.</source>
+        <translation>Última ofuscação foi muito recente.</translation>
+    </message>
+    <message>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation>Última ação de ofuscação com sucesso foi muito recente.</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -3787,6 +3786,10 @@ Endereço: %4
         <translation>Carregando carteira...</translation>
     </message>
     <message>
+        <source>Lock is already in place.</source>
+        <translation>Trava já está no lugar.</translation>
+    </message>
+    <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
         <translation>Manter pelo menos &lt;n&gt; conexões aos pares (padrão: %u)</translation>
     </message>
@@ -3795,16 +3798,60 @@ Endereço: %4
         <translation>Opções de Masternode:</translation>
     </message>
     <message>
+        <source>Masternode queue is full.</source>
+        <translation>A fila do Masternode está cheia.</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>Masternode:</translation>
+    </message>
+    <message>
+        <source>Mixing in progress...</source>
+        <translation>Embaralhamento em progresso.</translation>
+    </message>
+    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Necessário especificar uma porta com -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>No Masternodes detected.</source>
+        <translation>Nenhum Masternode detectado.</translation>
+    </message>
+    <message>
+        <source>No compatible Masternode found.</source>
+        <translation>Nenhum Masternode compatível encontrado.</translation>
     </message>
     <message>
         <source>Node relay options:</source>
         <translation>Opções de propagação do Nó:</translation>
     </message>
     <message>
+        <source>Non-standard public key detected.</source>
+        <translation>Chave pública não-padronizada detectada.</translation>
+    </message>
+    <message>
+        <source>Not compatible with existing transactions.</source>
+        <translation>Não é compatível com as transações existentes.</translation>
+    </message>
+    <message>
+        <source>Not in the Masternode list.</source>
+        <translation>Não está na lista de Masternodes.</translation>
+    </message>
+    <message>
         <source>Number of automatic wallet backups (default: 10)</source>
         <translation>Número de backups automáticos da carteira (padrão: 10)</translation>
+    </message>
+    <message>
+        <source>Obfuscation is idle.</source>
+        <translation>Ofuscação está ociosa.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Requisição de ofuscação completa:</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Requisição de ofuscação incompleta:</translation>
     </message>
     <message>
         <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
@@ -3819,8 +3866,8 @@ Endereço: %4
         <translation>Senha para conexões JSON-RPC</translation>
     </message>
     <message>
-        <source>Preparing for resync...</source>
-        <translation>Preparando para ressincronizar... </translation>
+        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
+        <translation>Opções de SSL RPC (veja a Bitcoin Wiki para instruções na configuração do SSL)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3837,6 +3884,14 @@ Endereço: %4
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Enviar transações com taxa zero se possível (padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Server private key (default: %s)</source>
+        <translation>Chave privada do servidor (padrão: %s)</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>Sessão não está completa!</translation>
     </message>
     <message>
         <source>Session timed out.</source>
@@ -3861,6 +3916,10 @@ Endereço: %4
     <message>
         <source>Set the masternode private key</source>
         <translation>Define a chave privada do masternode</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>Autenticação falhou.</translation>
     </message>
     <message>
         <source>Signing timed out.</source>
@@ -3899,12 +3958,24 @@ Endereço: %4
         <translation>Especifique seu próprio endereço público</translation>
     </message>
     <message>
-        <source>Staking options:</source>
-        <translation>Opções de staking:</translation>
-    </message>
-    <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
         <translation>Parar de rodar depois de importar blocos do disco (padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Enviadas as seguintes entradas ao masternode: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Enviado ao masternode, aguardando por mais entradas ( %u / %d) %s</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Enviado ao masternode, aguardando na fila %s</translation>
+    </message>
+    <message>
+        <source>SwiftTX options:</source>
+        <translation>opções SwiftTX:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -3931,12 +4002,28 @@ Endereço: %4
         <translation>Este software é experimental.</translation>
     </message>
     <message>
+        <source>This is not a Masternode.</source>
+        <translation>Isto não é um Masternode.</translation>
+    </message>
+    <message>
         <source>Transaction amount too small</source>
         <translation>Quantia de transação muito pequena</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
         <translation>Quantias de transação devem ser positivas</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>Transação criada com sucesso.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>Taxa de transação muito elevada.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Transação não é válida.</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
@@ -3947,36 +4034,36 @@ Endereço: %4
         <translation>Transação muito grande</translation>
     </message>
     <message>
+        <source>Transmitting final transaction.</source>
+        <translation>Transmitindo transação final.</translation>
+    </message>
+    <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Rede desconhecida especificada em -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown state: id = %u</source>
+        <translation>Estado desconhecido: id = %u</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Atualize a carteira para o último formato</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Use UPnP para mapear a porta de escuta (padrão: 1 ao escutar)</translation>
-    </message>
-    <message>
-        <source>Use a custom max chain reorganization depth (default: %u)</source>
-        <translation>Use uma profundidade de reorganização máxima da cadeia personalizada (padrão: %u)</translation>
+        <source>Use OpenSSL (https) for JSON-RPC connections</source>
+        <translation>Usar OpenSSL (https) para conexões JSON-RPC</translation>
     </message>
     <message>
         <source>Use the test network</source>
         <translation>Use a rede de testes</translation>
     </message>
     <message>
-        <source>User Agent comment (%s) contains unsafe characters.</source>
-        <translation>O comentário do agente do usuário (%s) contém caracteres não seguros.</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nome de usuário para conexões JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zTNSR</source>
-        <translation>O valor está abaixo da menor denominação disponível (= 1) do zTNSR</translation>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Valor maior que o máximo permitido pela pool de Ofuscação </translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3987,12 +4074,12 @@ Endereço: %4
         <translation>Verificando carteira...</translation>
     </message>
     <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>A carteira %s reside fora do diretório de dados %s</translation>
+        <source>Wallet is locked.</source>
+        <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart TradeTensor Core to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o TradeTensor Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart Tradetensor Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o Tradetensor Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -4019,24 +4106,24 @@ Endereço: %4
         <translation>Aviso: Argumento não suportado -debugnet ignorado, use -debug=net.</translation>
     </message>
     <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Você não tem Zerocoins suficientes na sua carteira</translation>
+        <source>Will retry...</source>
+        <translation>Tentando novamente...</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Você precisa refazer a base de dados usando -reindex para mudar -txindex</translation>
     </message>
     <message>
+        <source>Your entries added successfully.</source>
+        <translation>Suas entradas foram adicionadas com sucesso.</translation>
+    </message>
+    <message>
+        <source>Your transaction was accepted into the pool!</source>
+        <translation>Sua transação foi aceita na pool!</translation>
+    </message>
+    <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Eliminando todas as transações da carteira...</translation>
-    </message>
-    <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>Opções de notificação ZeroMQ:</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>opções Zerocoin:</translation>
     </message>
     <message>
         <source>on startup</source>
@@ -4045,25 +4132,6 @@ Endereço: %4
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrompido, falha ao salvar</translation>
-    </message>
-</context>
-<context>
-    <name>send</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulário</translation>
-    </message>
-    <message>
-        <source>Send</source>
-        <translation>Enviar </translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>Aperte o Botão</translation>
     </message>
 </context>
 </TS>

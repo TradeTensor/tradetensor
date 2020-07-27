@@ -1,5 +1,4 @@
 // Copyright (c) 2013 The Bitcoin Core developers
-// Copyright (c) 2019 The TradeTensor developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,11 +15,10 @@
 #include "util.h"
 #include "utilstrencodings.h"
 
-#include "test/test_bitcoin.h"
-
 #include <fstream>
 
 #include <boost/filesystem/operations.hpp>
+#include <boost/foreach.hpp>
 #include <boost/test/unit_test.hpp>
 
 #if 0
@@ -80,7 +78,7 @@
 }
 #endif
 
-struct ReadAlerts : public TestingSetup
+struct ReadAlerts
 {
     ReadAlerts()
     {
@@ -94,7 +92,7 @@ struct ReadAlerts : public TestingSetup
                 alerts.push_back(alert);
             }
         }
-        catch (const std::exception&) { }
+        catch (std::exception) { }
     }
     ~ReadAlerts() { }
 
@@ -120,7 +118,7 @@ BOOST_AUTO_TEST_CASE(AlertApplies)
 {
     SetMockTime(11);
 
-    for (const CAlert& alert : alerts)
+    BOOST_FOREACH(const CAlert& alert, alerts)
     {
         BOOST_CHECK(alert.CheckSignature());
     }
@@ -165,7 +163,7 @@ BOOST_AUTO_TEST_CASE(AlertNotify)
 
     mapArgs["-alertnotify"] = std::string("echo %s >> ") + temp.string();
 
-    for (CAlert alert : alerts)
+    BOOST_FOREACH(CAlert alert, alerts)
         alert.ProcessAlert(false);
 
     std::vector<std::string> r = read_lines(temp);

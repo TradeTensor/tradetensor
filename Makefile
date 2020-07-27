@@ -19,7 +19,6 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 
-
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
     false; \
@@ -93,7 +92,6 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-pc-linux-gnu
 host_triplet = x86_64-pc-linux-gnu
-am__append_1 = doc/man
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/build-aux/m4/ax_boost_base.m4 \
@@ -112,8 +110,6 @@ am__aclocal_m4_deps = $(top_srcdir)/build-aux/m4/ax_boost_base.m4 \
 	$(top_srcdir)/build-aux/m4/bitcoin_find_bdb48.m4 \
 	$(top_srcdir)/build-aux/m4/bitcoin_qt.m4 \
 	$(top_srcdir)/build-aux/m4/bitcoin_subdir_to_include.m4 \
-	$(top_srcdir)/build-aux/m4/gmp.m4 \
-	$(top_srcdir)/build-aux/m4/l_atomic.m4 \
 	$(top_srcdir)/build-aux/m4/libtool.m4 \
 	$(top_srcdir)/build-aux/m4/ltoptions.m4 \
 	$(top_srcdir)/build-aux/m4/ltsugar.m4 \
@@ -129,12 +125,10 @@ am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
 CONFIG_HEADER = $(top_builddir)/src/config/tradetensor-config.h
-CONFIG_CLEAN_FILES = libbitcoinconsensus.pc share/setup.nsi \
-	share/qt/Info.plist test/config.ini \
-	contrib/devtools/split-debug.sh doc/Doxyfile
-CONFIG_CLEAN_VPATH_FILES = contrib/filter-lcov.py \
-	test/functional/test_runner.py test/util/bitcoin-util-test.py \
-	test/util/rpcauth-test.py
+CONFIG_CLEAN_FILES = share/setup.nsi share/qt/Info.plist \
+	src/test/buildenv.py qa/pull-tester/run-bitcoind-for-test.sh \
+	qa/pull-tester/tests-config.sh contrib/devtools/split-debug.sh
+CONFIG_CLEAN_VPATH_FILES =
 SCRIPTS = $(dist_noinst_SCRIPTS)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
@@ -163,35 +157,6 @@ am__can_run_installinfo = \
     n|no|NO) false;; \
     *) (install-info --version) >/dev/null 2>&1;; \
   esac
-am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
-am__vpath_adj = case $$p in \
-    $(srcdir)/*) f=`echo "$$p" | sed "s|^$$srcdirstrip/||"`;; \
-    *) f=$$p;; \
-  esac;
-am__strip_dir = f=`echo $$p | sed -e 's|^.*/||'`;
-am__install_max = 40
-am__nobase_strip_setup = \
-  srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*|]/\\\\&/g'`
-am__nobase_strip = \
-  for p in $$list; do echo "$$p"; done | sed -e "s|$$srcdirstrip/||"
-am__nobase_list = $(am__nobase_strip_setup); \
-  for p in $$list; do echo "$$p $$p"; done | \
-  sed "s| $$srcdirstrip/| |;"' / .*\//!s/ .*/ ./; s,\( .*\)/[^/]*$$,\1,' | \
-  $(AWK) 'BEGIN { files["."] = "" } { files[$$2] = files[$$2] " " $$1; \
-    if (++n[$$2] == $(am__install_max)) \
-      { print $$2, files[$$2]; n[$$2] = 0; files[$$2] = "" } } \
-    END { for (dir in files) print dir, files[dir] }'
-am__base_list = \
-  sed '$$!N;$$!N;$$!N;$$!N;$$!N;$$!N;$$!N;s/\n/ /g' | \
-  sed '$$!N;$$!N;$$!N;$$!N;s/\n/ /g'
-am__uninstall_files_from_dir = { \
-  test -z "$$files" \
-    || { test ! -d "$$dir" && test ! -f "$$dir" && test ! -r "$$dir"; } \
-    || { echo " ( cd '$$dir' && rm -f" $$files ")"; \
-         $(am__cd) "$$dir" && rm -f $$files; }; \
-  }
-am__installdirs = "$(DESTDIR)$(pkgconfigdir)"
-DATA = $(pkgconfig_DATA)
 RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\
   distclean-recursive maintainer-clean-recursive
 am__recursive_targets = \
@@ -220,9 +185,8 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 CSCOPE = cscope
-DIST_SUBDIRS = src doc/man
+DIST_SUBDIRS = $(SUBDIRS)
 am__DIST_COMMON = $(srcdir)/Makefile.in \
-	$(srcdir)/libbitcoinconsensus.pc.in \
 	$(top_srcdir)/build-aux/compile \
 	$(top_srcdir)/build-aux/config.guess \
 	$(top_srcdir)/build-aux/config.sub \
@@ -230,17 +194,15 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/build-aux/ltmain.sh \
 	$(top_srcdir)/build-aux/missing \
 	$(top_srcdir)/contrib/devtools/split-debug.sh.in \
-	$(top_srcdir)/contrib/filter-lcov.py \
-	$(top_srcdir)/doc/Doxyfile.in \
+	$(top_srcdir)/qa/pull-tester/run-bitcoind-for-test.sh.in \
+	$(top_srcdir)/qa/pull-tester/tests-config.sh.in \
 	$(top_srcdir)/share/qt/Info.plist.in \
 	$(top_srcdir)/share/setup.nsi.in \
 	$(top_srcdir)/src/config/tradetensor-config.h.in \
-	$(top_srcdir)/test/config.ini.in \
-	$(top_srcdir)/test/functional/test_runner.py \
-	$(top_srcdir)/test/util/bitcoin-util-test.py \
-	$(top_srcdir)/test/util/rpcauth-test.py COPYING INSTALL \
+	$(top_srcdir)/src/test/buildenv.py.in COPYING INSTALL \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
-	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
+	build-aux/depcomp build-aux/install-sh build-aux/ltmain.sh \
+	build-aux/missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -277,23 +239,19 @@ am__relativize = \
   done; \
   reldir="$$dir2"
 DIST_ARCHIVES = $(distdir).tar.gz
-GZIP_ENV = --best
 DIST_TARGETS = dist-gzip
 distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/server16/tnsr-w/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /mnt/d/hcb/tradetensor-2/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-ARFLAGS = cr
-AUTOCONF = ${SHELL} /home/server16/tnsr-w/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/server16/tnsr-w/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/server16/tnsr-w/build-aux/missing automake-1.15
-AVX2_CXXFLAGS = -mavx -mavx2
+AUTOCONF = ${SHELL} /mnt/d/hcb/tradetensor-2/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /mnt/d/hcb/tradetensor-2/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /mnt/d/hcb/tradetensor-2/build-aux/missing automake-1.15
 AWK = gawk
-BDB_CFLAGS = 
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
 BITCOIN_CLI_NAME = tradetensor-cli
@@ -301,7 +259,7 @@ BITCOIN_DAEMON_NAME = tradetensord
 BITCOIN_GUI_NAME = tradetensor-qt
 BITCOIN_TX_NAME = tradetensor-tx
 BOOST_CHRONO_LIB = -lboost_chrono
-BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -pthread -I/usr/include
+BOOST_CPPFLAGS = -pthread -I/usr/include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem
 BOOST_LDFLAGS = -L/usr/lib/x86_64-linux-gnu
 BOOST_LIBS = -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_chrono
@@ -310,59 +268,50 @@ BOOST_SYSTEM_LIB = -lboost_system
 BOOST_THREAD_LIB = -lboost_thread
 BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework
 BREW = 
+BUILD_QT = 
+BUILD_TEST = test
+BUILD_TEST_QT = 
 CC = gcc
 CCACHE = 
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CHARTS_CFLAGS = 
-CHARTS_LIBS = 
-CLIENT_VERSION_BUILD = 0
+CLIENT_VERSION_BUILD = 1
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MAJOR = 3
 CLIENT_VERSION_MINOR = 0
-CLIENT_VERSION_REVISION = 1
-COMPAT_LDFLAGS = 
-COPYRIGHT_YEAR = 2020
+CLIENT_VERSION_REVISION = 0
+COMPARISON_TOOL_REORG_TESTS = 0
+COPYRIGHT_YEAR = 2019
 CPP = gcc -E
 CPPFILT = /usr/bin/c++filt
-CPPFLAGS =  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS
+CPPFLAGS =  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
 CRYPTO_CFLAGS = 
 CRYPTO_LIBS = -lcrypto
 CXX = g++ -std=c++11
 CXXCPP = g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2
+CXXFLAGS = -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIC -fvisibility=hidden
 CYGPATH_W = echo
-DEBUG_CPPFLAGS = 
-DEBUG_CXXFLAGS = 
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DLLTOOL = false
-DOXYGEN = 
 DSYMUTIL = 
 DUMPBIN = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
-ERROR_CXXFLAGS = 
 EVENT_CFLAGS = 
 EVENT_LIBS = -levent
 EVENT_PTHREADS_CFLAGS = -pthread
 EVENT_PTHREADS_LIBS = -levent_pthreads -levent
 EXEEXT = 
-EXTENDED_FUNCTIONAL_TESTS = 
 FGREP = /bin/grep -F
 GCOV = /usr/bin/gcov
 GENHTML = 
 GENISOIMAGE = 
 GIT = /usr/bin/git
-GPROF_CXXFLAGS = 
-GPROF_LDFLAGS = 
 GREP = /bin/grep
-HARDENED_CPPFLAGS =  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
-HARDENED_CXXFLAGS =  -Wstack-protector -fstack-protector-all
-HARDENED_LDFLAGS =  -Wl,-z,relro -Wl,-z,now -pie
 HAVE_CXX11 = 1
 HEXDUMP = /usr/bin/hexdump
 IMAGEMAGICK_CONVERT = 
@@ -372,16 +321,17 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+JAVA = 
+JAVA_COMPARISON_TOOL = 
 LCOV = 
-LCOV_OPTS = 
 LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = 
+LDFLAGS =   -Wl,-z,relro -Wl,-z,now
 LEVELDB_CPPFLAGS = 
-LEVELDB_TARGET_FLAGS = -DOS_LINUX
+LEVELDB_TARGET_FLAGS = 
 LIBLEVELDB = 
 LIBMEMENV = 
 LIBOBJS = 
-LIBS =  -lgmp
+LIBS = -lcrypto -lanl 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS = 
 LIPO = 
@@ -391,7 +341,7 @@ LTLIBOBJS =
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /home/server16/tnsr-w/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /mnt/d/hcb/tradetensor-2/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
@@ -401,25 +351,22 @@ MOC =
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
 NM = /usr/bin/nm -B
 NMEDIT = 
-NOWARN_CXXFLAGS =  -Wno-unused-parameter
 OBJCOPY = /usr/bin/objcopy
 OBJCXX = g++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
-OBJCXXFLAGS = 
+OBJCXXFLAGS = -g -O2 -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter  -Wstack-protector -fstack-protector-all -fPIC
 OBJDUMP = objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
 PACKAGE = tradetensor
-PACKAGE_BUGREPORT = https://github.com/tradetensor-project/tradetensor/issues
-PACKAGE_NAME = TradeTensor Core
-PACKAGE_STRING = TradeTensor Core 1.0.1
+PACKAGE_BUGREPORT = www.tradetensor.org
+PACKAGE_NAME = Tradetensor Core
+PACKAGE_STRING = Tradetensor Core 3.0.0
 PACKAGE_TARNAME = tradetensor
-PACKAGE_URL = https://tradetensor.org/
-PACKAGE_VERSION = 1.0.1
+PACKAGE_URL = 
+PACKAGE_VERSION = 3.0.0
 PATH_SEPARATOR = :
-PIC_FLAGS = -fPIC
-PIE_FLAGS = -fPIE
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
 PKG_CONFIG_PATH = 
@@ -430,36 +377,17 @@ PROTOC =
 PTHREAD_CC = gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
-PYTHON = /usr/bin/python3.5
+PYTHON = /usr/bin/python3
 PYTHONPATH = 
 QR_CFLAGS = 
 QR_LIBS = 
-QT5_CFLAGS = 
-QT5_LIBS = 
-QTACCESSIBILITY_CFLAGS = 
-QTACCESSIBILITY_LIBS = 
-QTCGL_CFLAGS = 
-QTCGL_LIBS = 
-QTCLIPBOARD_CFLAGS = 
-QTCLIPBOARD_LIBS = 
-QTDEVICEDISCOVERY_CFLAGS = 
-QTDEVICEDISCOVERY_LIBS = 
-QTEVENTDISPATCHER_CFLAGS = 
-QTEVENTDISPATCHER_LIBS = 
-QTFB_CFLAGS = 
-QTFB_LIBS = 
-QTFONTDATABASE_CFLAGS = 
-QTFONTDATABASE_LIBS = 
-QTGRAPHICS_CFLAGS = 
-QTGRAPHICS_LIBS = 
 QTPLATFORM_CFLAGS = 
 QTPLATFORM_LIBS = 
-QTTHEME_CFLAGS = 
-QTTHEME_LIBS = 
+QTPRINT_CFLAGS = 
+QTPRINT_LIBS = 
 QTXCBQPA_CFLAGS = 
 QTXCBQPA_LIBS = 
-QT_CONCURRENT_CFLAGS = 
-QT_CONCURRENT_LIBS = 
+QT_CFLAGS = 
 QT_DBUS_CFLAGS = 
 QT_DBUS_INCLUDES = 
 QT_DBUS_LIBS = 
@@ -467,10 +395,7 @@ QT_INCLUDES =
 QT_LDFLAGS = 
 QT_LIBS = 
 QT_PIE_FLAGS = 
-QT_SELECT = qt5
-QT_SVG_CFLAGS = 
-QT_SVG_INCLUDES = 
-QT_SVG_LIBS = 
+QT_SELECT = qt
 QT_TEST_CFLAGS = 
 QT_TEST_INCLUDES = 
 QT_TEST_LIBS = 
@@ -478,30 +403,20 @@ QT_TRANSLATION_DIR =
 RANLIB = /usr/bin/ranlib
 RCC = 
 READELF = /usr/bin/readelf
-RELDFLAGS = 
+RELDFLAGS = -Wl,--exclude-libs,ALL
 RSVG_CONVERT = 
-SANITIZER_CXXFLAGS = 
-SANITIZER_LDFLAGS = 
 SED = /bin/sed
 SET_MAKE = 
-SHANI_CXXFLAGS = -msse4 -msha
 SHELL = /bin/bash
-SSE41_CXXFLAGS = -msse4.1
-SSE42_CXXFLAGS = -msse4.2
 SSL_CFLAGS = 
 SSL_LIBS = -lssl
 STRIP = /usr/bin/strip
 TESTDEFS =  -DBOOST_TEST_DYN_LINK
 TIFFCP = 
 UIC = 
-UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
-UNIVALUE_LIBS = univalue/libunivalue.la
-USE_NUM_GMP = 
-USE_NUM_OPENSSL = 
-USE_QTCHARTS = 
+USE_QRCODE = 
 USE_UPNP = 
-VERSION = 1.0.1
-WARN_CXXFLAGS =  -Wall -Wextra -Wformat -Wvla -Wformat-security -Wredundant-decls
+VERSION = 3.0.0
 WINDOWS_BITS = 
 WINDRES = 
 X11XCB_CFLAGS = 
@@ -509,10 +424,10 @@ X11XCB_LIBS =
 XGETTEXT = 
 ZMQ_CFLAGS = 
 ZMQ_LIBS = -lzmq
-abs_builddir = /home/server16/tnsr-w
-abs_srcdir = /home/server16/tnsr-w
-abs_top_builddir = /home/server16/tnsr-w
-abs_top_srcdir = /home/server16/tnsr-w
+abs_builddir = /mnt/d/hcb/tradetensor-2
+abs_srcdir = /mnt/d/hcb/tradetensor-2
+abs_top_builddir = /mnt/d/hcb/tradetensor-2
+abs_top_srcdir = /mnt/d/hcb/tradetensor-2
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -544,7 +459,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/server16/tnsr-w/build-aux/install-sh
+install_sh = ${SHELL} /mnt/d/hcb/tradetensor-2/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -560,23 +475,22 @@ runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs =  src/univalue src/secp256k1
+subdirs =  src/secp256k1
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .
 top_srcdir = .
 ACLOCAL_AMFLAGS = -I build-aux/m4
-SUBDIRS = src $(am__append_1)
-#pkgconfigdir = $(libdir)/pkgconfig
-#pkgconfig_DATA = libbitcoinconsensus.pc
+SUBDIRS = src
+GZIP_ENV = "-9n"
 BITCOIND_BIN = $(top_builddir)/src/$(BITCOIN_DAEMON_NAME)$(EXEEXT)
 BITCOIN_QT_BIN = $(top_builddir)/src/qt/$(BITCOIN_GUI_NAME)$(EXEEXT)
 BITCOIN_CLI_BIN = $(top_builddir)/src/$(BITCOIN_CLI_NAME)$(EXEEXT)
 BITCOIN_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = TradeTensor-Qt.app
+OSX_APP = TRADETENSOR-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -589,27 +503,10 @@ OSX_INSTALLER_ICONS = $(top_srcdir)/src/qt/res/icons/bitcoin.icns
 OSX_PLIST = $(top_builddir)/share/qt/Info.plist #not installed
 OSX_QT_TRANSLATIONS = da,de,es,hu,ru,uk,zh_CN,zh_TW
 DIST_DOCS = $(wildcard doc/*.md) $(wildcard doc/release-notes/*.md)
-DIST_CONTRIB = $(top_srcdir)/contrib/tradetensor-cli.bash-completion \
-	       $(top_srcdir)/contrib/tradetensor-tx.bash-completion \
-	       $(top_srcdir)/contrib/tradetensord.bash-completion \
-           $(top_srcdir)/contrib/init \
-           $(top_srcdir)/contrib/install_db4.sh
-
-DIST_SHARE = \
-           $(top_srcdir)/share/genbuild.sh \
-           $(top_srcdir)/share/rpcauth
-
-BIN_CHECKS = $(top_srcdir)/contrib/devtools/symbol-check.py \
-           $(top_srcdir)/contrib/devtools/security-check.py
-
-WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/tradetensor.ico \
+WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/bitcoin.ico \
   $(top_srcdir)/share/pixmaps/nsis-header.bmp \
   $(top_srcdir)/share/pixmaps/nsis-wizard.bmp \
   $(top_srcdir)/doc/README_windows.txt
-
-LINUX_PACKAGING = $(top_srcdir)/share/pixmaps/tradetensor16.xpm \
-  $(top_srcdir)/share/pixmaps/tradetensor32.xpm \
-  $(top_srcdir)/share/pixmaps/tradetensor128.png
 
 OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/$(OSX_BACKGROUND_SVG) \
@@ -617,40 +514,21 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-apply.sh \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
-COVERAGE_INFO = baseline.info \
-  test_tradetensor_filtered.info total_coverage.info \
-  baseline_filtered.info functional_test.info functional_test_filtered.info \
-  test_tradetensor_coverage.info test_tradetensor.info
+COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
+  leveldb_baseline.info test_tradetensor_filtered.info total_coverage.info \
+  baseline_filtered.info block_test_filtered.info \
+  leveldb_baseline_filtered.info test_tradetensor_coverage.info test_tradetensor.info
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/TradeTensor-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
+  $(OSX_APP)/Contents/MacOS/TRADETENSOR-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 APP_DIST_DIR = $(top_builddir)/dist
 APP_DIST_EXTRAS = $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE) $(APP_DIST_DIR)/.DS_Store $(APP_DIST_DIR)/Applications
 OSX_BACKGROUND_IMAGE_DPIFILES := $(foreach dpi,$(OSX_BACKGROUND_IMAGE_DPIS),dpi$(dpi).$(OSX_BACKGROUND_IMAGE))
-#LCOV_FILTER_PATTERN = -p "/usr/include/" -p "/usr/lib/" -p "src/leveldb/" -p "src/univalue" -p "src/secp256k1"
 dist_noinst_SCRIPTS = autogen.sh
-EXTRA_DIST = $(DIST_SHARE) $(DIST_CONTRIB) $(DIST_DOCS) \
-	$(WINDOWS_PACKAGING) $(LINUX_PACKAGING) $(OSX_PACKAGING) \
-	$(BIN_CHECKS) test/functional test/util/bitcoin-util-test.py \
-	test/util/data/bitcoin-util-test.json \
-	test/util/data/blanktxv1.hex test/util/data/blanktxv1.json \
-	test/util/data/tt-delin1-out.hex \
-	test/util/data/tt-delin1-out.json \
-	test/util/data/tt-delout1-out.hex \
-	test/util/data/tt-delout1-out.json \
-	test/util/data/tt-locktime317000-out.hex \
-	test/util/data/tt-locktime317000-out.json \
-	test/util/data/tx394b54bb.hex test/util/data/txcreate1.hex \
-	test/util/data/txcreate1.json test/util/data/txcreate2.hex \
-	test/util/data/txcreate2.json \
-	test/util/data/txcreatescript1.hex \
-	test/util/data/txcreatescript1.json \
-	test/util/data/txcreatesign.hex \
-	test/util/data/txcreatesign.json test/util/rpcauth-test.py
+EXTRA_DIST = $(top_srcdir)/share/genbuild.sh qa/pull-tester/rpc-tests.sh qa/pull-tester/run-bitcoin-cli qa/rpc-tests $(DIST_DOCS) $(WINDOWS_PACKAGING) $(OSX_PACKAGING)
 CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
-DISTCHECK_CONFIGURE_FLAGS = --enable-man
 all: all-recursive
 
 .SUFFIXES:
@@ -702,18 +580,18 @@ $(top_srcdir)/src/config/tradetensor-config.h.in:  $(am__configure_deps)
 
 distclean-hdr:
 	-rm -f src/config/tradetensor-config.h src/config/stamp-h1
-libbitcoinconsensus.pc: $(top_builddir)/config.status $(srcdir)/libbitcoinconsensus.pc.in
-	cd $(top_builddir) && $(SHELL) ./config.status $@
 share/setup.nsi: $(top_builddir)/config.status $(top_srcdir)/share/setup.nsi.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 share/qt/Info.plist: $(top_builddir)/config.status $(top_srcdir)/share/qt/Info.plist.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
-test/config.ini: $(top_builddir)/config.status $(top_srcdir)/test/config.ini.in
+src/test/buildenv.py: $(top_builddir)/config.status $(top_srcdir)/src/test/buildenv.py.in
+	cd $(top_builddir) && $(SHELL) ./config.status $@
+qa/pull-tester/run-bitcoind-for-test.sh: $(top_builddir)/config.status $(top_srcdir)/qa/pull-tester/run-bitcoind-for-test.sh.in
+	cd $(top_builddir) && $(SHELL) ./config.status $@
+qa/pull-tester/tests-config.sh: $(top_builddir)/config.status $(top_srcdir)/qa/pull-tester/tests-config.sh.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 contrib/devtools/split-debug.sh: $(top_builddir)/config.status $(top_srcdir)/contrib/devtools/split-debug.sh.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
-#doc/Doxyfile: $(top_builddir)/config.status $(top_srcdir)/doc/Doxyfile.in
-#	cd $(top_builddir) && $(SHELL) ./config.status $@
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -723,27 +601,6 @@ clean-libtool:
 
 distclean-libtool:
 	-rm -f libtool config.lt
-install-pkgconfigDATA: $(pkgconfig_DATA)
-	@$(NORMAL_INSTALL)
-	@list='$(pkgconfig_DATA)'; test -n "$(pkgconfigdir)" || list=; \
-	if test -n "$$list"; then \
-	  echo " $(MKDIR_P) '$(DESTDIR)$(pkgconfigdir)'"; \
-	  $(MKDIR_P) "$(DESTDIR)$(pkgconfigdir)" || exit 1; \
-	fi; \
-	for p in $$list; do \
-	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
-	  echo "$$d$$p"; \
-	done | $(am__base_list) | \
-	while read files; do \
-	  echo " $(INSTALL_DATA) $$files '$(DESTDIR)$(pkgconfigdir)'"; \
-	  $(INSTALL_DATA) $$files "$(DESTDIR)$(pkgconfigdir)" || exit $$?; \
-	done
-
-uninstall-pkgconfigDATA:
-	@$(NORMAL_UNINSTALL)
-	@list='$(pkgconfig_DATA)'; test -n "$(pkgconfigdir)" || list=; \
-	files=`for p in $$list; do echo $$p; done | sed -e 's|^.*/||'`; \
-	dir='$(DESTDIR)$(pkgconfigdir)'; $(am__uninstall_files_from_dir)
 
 # This directory's subdirectories are mostly independent; you can cd
 # into them and run 'make' without going through this Makefile.
@@ -984,6 +841,7 @@ distcheck: dist
 	test -d $(distdir)/_build || exit 0; \
 	dc_install_base=`$(am__cd) $(distdir)/_inst && pwd | sed -e 's,^[^:\\/]:[\\/],/,'` \
 	  && dc_destdir="$${TMPDIR-/tmp}/am-dc-$$$$/" \
+	  && $(MAKE) $(AM_MAKEFLAGS) distcheck-hook \
 	  && am__cwd=`pwd` \
 	  && $(am__cd) $(distdir)/_build/sub \
 	  && ../../configure \
@@ -1033,23 +891,11 @@ distuninstallcheck:
 	        fi ; \
 	        $(distuninstallcheck_listfiles) ; \
 	        exit 1; } >&2
-distcleancheck: distclean
-	@if test '$(srcdir)' = . ; then \
-	  echo "ERROR: distcleancheck can only run from a VPATH build" ; \
-	  exit 1 ; \
-	fi
-	@test `$(distcleancheck_listfiles) | wc -l` -eq 0 \
-	  || { echo "ERROR: files left in build directory after distclean:" ; \
-	       $(distcleancheck_listfiles) ; \
-	       exit 1; } >&2
 check-am: all-am
 check: check-recursive
-all-am: Makefile $(SCRIPTS) $(DATA)
+all-am: Makefile $(SCRIPTS)
 installdirs: installdirs-recursive
 installdirs-am:
-	for dir in "$(DESTDIR)$(pkgconfigdir)"; do \
-	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
-	done
 install: install-recursive
 install-exec: install-exec-recursive
 install-data: install-data-recursive
@@ -1103,7 +949,7 @@ info: info-recursive
 
 info-am:
 
-install-data-am: install-pkgconfigDATA
+install-data-am:
 
 install-dvi: install-dvi-recursive
 
@@ -1149,7 +995,7 @@ ps: ps-recursive
 
 ps-am:
 
-uninstall-am: uninstall-pkgconfigDATA
+uninstall-am:
 
 .MAKE: $(am__recursive_targets) install-am install-strip
 
@@ -1164,21 +1010,29 @@ uninstall-am: uninstall-pkgconfigDATA
 	install-data install-data-am install-dvi install-dvi-am \
 	install-exec install-exec-am install-html install-html-am \
 	install-info install-info-am install-man install-pdf \
-	install-pdf-am install-pkgconfigDATA install-ps install-ps-am \
-	install-strip installcheck installcheck-am installdirs \
-	installdirs-am maintainer-clean maintainer-clean-generic \
-	mostlyclean mostlyclean-generic mostlyclean-libtool pdf pdf-am \
-	ps ps-am tags tags-am uninstall uninstall-am \
-	uninstall-pkgconfigDATA
+	install-pdf-am install-ps install-ps-am install-strip \
+	installcheck installcheck-am installdirs installdirs-am \
+	maintainer-clean maintainer-clean-generic mostlyclean \
+	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
+	tags tags-am uninstall uninstall-am
 
 .PRECIOUS: Makefile
 
 .PHONY: deploy FORCE
-
 export PYTHONPATH
 
 dist-hook:
+	-$(MAKE) -C $(top_distdir)/src/leveldb clean
+	-$(MAKE) -C $(top_distdir)/src/secp256k1 distclean
 	-$(GIT) archive --format=tar HEAD -- src/clientversion.cpp | $(AMTAR) -C $(top_distdir) -xf -
+
+distcheck-hook:
+	$(MKDIR_P) $(top_distdir)/_build/src/leveldb
+	cp -rf $(top_srcdir)/src/leveldb/* $(top_distdir)/_build/src/leveldb/
+	-$(MAKE) -C $(top_distdir)/_build/src/leveldb clean
+
+distcleancheck:
+	@:
 
 $(BITCOIN_WIN_INSTALLER): all-recursive
 	$(MKDIR_P) $(top_builddir)/release
@@ -1205,9 +1059,9 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/TradeTensor-Qt: all-recursive
+$(OSX_APP)/Contents/MacOS/TRADETENSOR-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $(BITCOIN_QT_BIN) $@
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
 $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings:
 	$(MKDIR_P) $(@D)
@@ -1232,7 +1086,7 @@ $(APP_DIST_DIR)/Applications:
 	@rm -f $@
 	@cd $(@D); $(LN_S) /Applications $(@F)
 
-$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/TradeTensor-Qt
+$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/TRADETENSOR-Qt
 
 $(OSX_DMG): $(APP_DIST_EXTRAS)
 	$(GENISOIMAGE) -no-cache-inodes -D -l -probe -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -apple -o $@ dist
@@ -1246,7 +1100,7 @@ $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE): $(OSX_BACKGROUND_IMAGE_DPIF
 $(APP_DIST_DIR)/.DS_Store: $(OSX_DSSTORE_GEN)
 	$(PYTHON) $< "$@" "$(OSX_VOLNAME)"
 
-$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/TradeTensor-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
+$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/TRADETENSOR-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
 	INSTALLNAMETOOL=$(INSTALLNAMETOOL)  OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) -translations-dir=$(QT_TRANSLATION_DIR) -add-qt-tr $(OSX_QT_TRANSLATIONS) -verbose 2
 
 deploydir: $(APP_DIST_EXTRAS)
@@ -1268,60 +1122,56 @@ $(BITCOIN_CLI_BIN): FORCE
 #	$(LCOV) -c -i -d $(abs_builddir)/src -o $@
 
 #baseline_filtered.info: baseline.info
-#	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
-#	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
+#	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#test_tradetensor.info: baseline_filtered.info
+#leveldb_baseline.info: baseline_filtered.info
+#	$(LCOV) -c -i -d $(abs_builddir)/src/leveldb -b $(abs_builddir)/src/leveldb -o $@
+
+#leveldb_baseline_filtered.info: leveldb_baseline.info
+#	$(LCOV) -r $< "/usr/include/*" -o $@
+
+#baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
+#	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
+
+#test_tradetensor.info: baseline_filtered_combined.info
 #	$(MAKE) -C src/ check
-#	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src -t test_tradetensor -o $@
-#	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
+#	$(LCOV) -c -d $(abs_builddir)/src -t test_tradetensor -o $@
+#	$(LCOV) -z -d $(abs_builddir)/src
+#	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
 #test_tradetensor_filtered.info: test_tradetensor.info
-#	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
-#	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
+#	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#functional_test.info: test_tradetensor_filtered.info
-#	-@TIMEOUT=15 test/functional/test_runner.py $(EXTENDED_FUNCTIONAL_TESTS)
-#	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src --t functional-tests -o $@
-#	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
+#block_test.info: test_tradetensor_filtered.info
+#	$(MKDIR_P) qa/tmp
+#	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
+#	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
+#	$(LCOV) -z -d $(abs_builddir)/src
+#	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-#functional_test_filtered.info: functional_test.info
-#	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
-#	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
+#block_test_filtered.info: block_test.info
+#	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#test_tradetensor_coverage.info: baseline_filtered.info test_tradetensor_filtered.info
-#	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_tradetensor_filtered.info -o $@
+#test_tradetensor_coverage.info: baseline_filtered_combined.info test_tradetensor_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_tradetensor_filtered.info -o $@
 
-#total_coverage.info: test_tradetensor_filtered.info functional_test_filtered.info
-#	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_tradetensor_filtered.info -a functional_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+#total_coverage.info:  baseline_filtered_combined.info test_tradetensor_filtered.info block_test_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_tradetensor_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
 #test_tradetensor.coverage/.dirstamp:  test_tradetensor_coverage.info
-#	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
+#	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
 #total.coverage/.dirstamp: total_coverage.info
-#	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
+#	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
 #cov: test_tradetensor.coverage/.dirstamp total.coverage/.dirstamp
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 
-doc/doxygen/.stamp: doc/Doxyfile FORCE
-	$(MKDIR_P) $(@D)
-	$(DOXYGEN) $^
-	$(AM_V_at) touch $@
-
-#docs: doc/doxygen/.stamp
-docs:
-	@echo "error: doxygen not found"
-
-clean-docs:
-	rm -rf doc/doxygen
-
-clean-local: clean-docs
-	rm -rf coverage_percent.txt test_tradetensor.coverage/ total.coverage/ test/tmp/ cache/ $(OSX_APP)
-	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache share/rpcauth/__pycache__
+clean-local:
+	rm -rf test_tradetensor.coverage/ total.coverage/ $(OSX_APP)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

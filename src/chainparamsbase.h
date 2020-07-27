@@ -1,5 +1,4 @@
 // Copyright (c) 2014 The Bitcoin developers
-// Copyright (c) 2017-2019 The TradeTensor developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between tradetensor-cli and tradetensord)
- * of a given instance of the TradeTensor system.
+ * of a given instance of the Tradetensor system.
  */
 class CBaseChainParams
 {
